@@ -1,37 +1,3 @@
-## Documenting projects in github
-Good documentation is key to the success of any project.
-Making documentation accessible enables people to learn about a project;
-making it easy to update ensures that documentation stays relevant.
-
-Two common ways to document a project are README files and wikis:
-
-README files are a quick and simple way for other users to learn more about
-your work.
-
-Wikis on GitHub help you present in-depth information about your project
-in a useful way.
-
-It’s a good idea to at least have a README on your project, because
-it’s the first thing many people will read when they first find your
-work.
-
-### Creating your README
-When you create a new repository though GitHub, select “Initialize this
-repository with a README” unless you plan to import an existing repository.
-Screenshot of initializing a README
-
-Your README.md file is now available for editing in your brand-new repository.
-Your project’s name is at the top, followed by any description you chose to
-include when creating the repository. READMEs are easy to modify, both on
-GitHub or locally. Check out the Mastering Markdown guide to learn more about
-how to modify the text within the file after you’ve made it.
-
-### Creating your wiki
-Every repository on GitHub comes with a wiki. After you’ve created a
-repository, you can set up the included wiki through the sidebar navigation.
-Starting your wiki is simply a matter of clicking the wiki button and
-creating your first page.
-
 ## Milestones and Labels
 
 ### Milestones
@@ -77,3 +43,38 @@ Milestones are a fun and cool way to do Agile things on github. You can imagine 
 #### An example agile workflow
 
 For each sprint we can create a milestone, which contains the issues that are to be resolved in that sprint. These issues can be assigned to different developers, and can be labeled with relevant information to help in the easy management of the project. At the end of the sprint, any unresolved issues can be transfered to a new milestone, and labeled to show their level of priority
+
+
+## Documenting projects in github
+Good documentation is key to the success of any project.
+Making documentation accessible enables people to learn about a project;
+making it easy to update ensures that documentation stays relevant.
+
+Two common ways to document a project are README files and wikis:
+
+README files are a quick and simple way for other users to learn more about
+your work.
+
+Wikis on GitHub help you present in-depth information about your project
+in a useful way.
+
+It’s a good idea to at least have a README on your project, because
+it’s the first thing many people will read when they first find your
+work.
+
+### Creating your README
+When you create a new repository though GitHub, select “Initialize this
+repository with a README” unless you plan to import an existing repository.
+Screenshot of initializing a README
+
+Your README.md file is now available for editing in your brand-new repository.
+Your project’s name is at the top, followed by any description you chose to
+include when creating the repository. READMEs are easy to modify, both on
+GitHub or locally. Check out the Mastering Markdown guide to learn more about
+how to modify the text within the file after you’ve made it.
+
+### Creating your wiki
+Every repository on GitHub comes with a wiki. After you’ve created a
+repository, you can set up the included wiki through the sidebar navigation.
+Starting your wiki is simply a matter of clicking the wiki button and
+creating your first page.
