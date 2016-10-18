@@ -24,7 +24,7 @@ Beyond the public hosting service, GitHub's other substantial benefit is that it
 
 A particularly useful addition to the Git workflow is the pull request. A developer commits some code and requests that it is pulled into the main branch. This enables you to review proposed changes and decide whether to accept them.
 
-## Milestones and Labels
+# Milestones and Labels
 
 ### Milestones
 Essentially milestones are a way of organising a number of github issues
@@ -71,7 +71,7 @@ These issues can be assigned to different developers, and can be labeled with re
 At the end of the sprint, any unresolved issues can be transfered to a new milestone, and labeled to show their level of priority
 
 
-## Documenting projects in github
+# Documenting projects in github
 Good documentation is key to the success of any project.
 Making documentation accessible enables people to learn about a project;
 making it easy to update ensures that documentation stays relevant.
@@ -105,7 +105,7 @@ repository, you can set up the included wiki through the sidebar navigation.
 Starting your wiki is simply a matter of clicking the wiki button and
 creating your first page.
 
-## Hoisting websites on GitHub Pages
+# Hoisting websites on GitHub Pages
 
 ### Introduction
 Gt is a version control system that you can use locally on your machine, while GitHub and GitHub Pages hoist projects that use git on their servers.
