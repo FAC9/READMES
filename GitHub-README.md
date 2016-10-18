@@ -61,14 +61,14 @@ To create a milestone click on milestone, then on new milestone.
   on the milestone to see the issues in greater detail
 
 
-Labels can be created in a similar way, or can be created on the fly when adding labels to a given issue.
+Labels can be created in a similar way, and then added to individual issues.
 
-### Get agile with it.
-Milestones are a fun and cool way to do Agile things on github. You can imagine that a milestone is like a sprint. A cool sprint.
+### An example agile workflow using Milestones and Labels
 
-#### An example agile workflow
+For each sprint we can create a milestone, which contains the issues that are to be resolved in that sprint.
+These issues can be assigned to different developers, and can be labeled with relevant information to help in the easy management of the project.
 
-For each sprint we can create a milestone, which contains the issues that are to be resolved in that sprint. These issues can be assigned to different developers, and can be labeled with relevant information to help in the easy management of the project. At the end of the sprint, any unresolved issues can be transfered to a new milestone, and labeled to show their level of priority
+At the end of the sprint, any unresolved issues can be transfered to a new milestone, and labeled to show their level of priority
 
 
 ## Documenting projects in github
