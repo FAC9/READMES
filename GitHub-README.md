@@ -13,7 +13,9 @@ Creating Milestones and Labels -
   Both Milestones and Labels can be managed under your repo's issues tab.
 
   To create a milestone click on milestone, then on new milestone
-  ![Where to find Milestones](/images/milestone.png)
+  ![Where to find Milestones](/images/milestones.png)
 
   Once you have created a milestone and assigned issues to it you will see a progress tracker like This
   ![Progress](/images/milestoneinaction.png)
+
+  As issues are resolved this progress bar will start to fill up.
