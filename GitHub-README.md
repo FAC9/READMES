@@ -13,12 +13,8 @@ This might work fine if you have access to the other people's computers, but wha
 
 ## GitHub
 
-GitHub is a hosting service for git repositories. Used for backup and collaboration.
+GitHub is a hosting service for git repositories. The main benefit of putting your repository on GitHub is to make collaboration easier.
 
-You can choose which branches to put on GitHub.
+Though you can use git without GitHub, it is difficult for other people to konw about your project and contribute to it. GitHub allows anyone to clone or fork your project and gives you an easy way to keep the public version up to date.
 
-Offers all of git's features and adds more for collaboration:
-
-bug tracking, feature requests, task management, wikis.
-
-Core function is hosting, but real power comes from collaboration tools.
+As well as the basic hosting service, GitHub offers additional tools to make collaborating easier. These include bug tracking, feature requests, pull requests and so on.
