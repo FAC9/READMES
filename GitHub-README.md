@@ -3,15 +3,13 @@ Git versus GitHub
 
 ## Git
 
-Git is a distributed version control system (VCS). Version control systems are used to track and share changes (commits) to documents in a repository. 'Distributed' means that each person using the repository has a complete copy of it on their computer, rather than relying on a separate server to hold all of the information.
+Git is a distributed version control system. Version control is used to track and share changes (known as 'commits') to documents in a 'repository'. 'Distributed' means that each developer has a complete copy of the repository on their computer and there is no need to rely on a central server to track changes.
 
-* non-linear - branching structure
-* distributed - each developer has copy of full development history
-* fast and scalable
+The basic process when using Git is to commit code changes to a branch of a repository. Keeping workflows in separate branches means that multiple people can be working on different parts of the codebase at once. Once the work in a branch is completed, it should be merged into the central, master branch.
 
-Index/cache vs object database
+Once you've committed your changes, how do you share them? Git is designed so that you can easily `pull` changes that other people have made and `push` your own. You might do this by allowing collaborators to ssh into the repository on your computer, or by pushing all of your changes to a repository on a local server you all have access to.
 
-Push changes to a common repository. This could be GitHub, but it could also be e.g. Heroku hosting. If you want to share with others, they just need to have access to the repo in order to pull changes. But you don't /need/ to use Github. Pull/push from each other's computers. But what if you can't access the person's computer?
+This might work fine if you have access to the other people's computers, but what if you don't? What if you don't even know who the collaborators might be? This is where GitHub comes in.
 
 ## GitHub
 
