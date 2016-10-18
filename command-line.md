@@ -1,11 +1,10 @@
-<<<<<<< HEAD
 # Command Line
 
 ### What is Bash? ###
 
 Short answer: **Bash is a Unix shell**.
 
- - A ** shell** is a user interface for access to an operating system's services. It is an example of a command-line interface (CLI), as opposed to the graphical user interface (GUI). It is named a shell because it is a layer around the operating system kernel. Shells may be used interactively, with input typed from the keyboard in the text window, or non-interactively, reading commands from a file (a script).
+ - A **shell** is a user interface for access to an operating system's services. It is an example of a command-line interface (CLI), as opposed to the graphical user interface (GUI). It is named a shell because it is a layer around the operating system kernel. Shells may be used interactively, with input typed from the keyboard in the text window, or non-interactively, reading commands from a file (a script).
 
 - **Unix shell** is a shell that provides a traditional Unix-like command line user interface.
 
