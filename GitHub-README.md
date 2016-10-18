@@ -15,7 +15,7 @@ created in a more or less granular fashion as you see fit.
 ### Labels
 Labels are applied to issues, and are fundamentally a categorisation tool. While there are pre-existing labels provided by GitHub, you can create custom labels to fit your needs.
 
-![labels](/images/labels.png)
+![labels](/images/labelsexample.png)
 
 Labels are extremely simple to create, are prominently displayed on github and can be easily and powerfully filtered. This makes them a very useful tool for developers  working in a team.
 
