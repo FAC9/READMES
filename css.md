@@ -63,6 +63,7 @@ If the `width` of a box is undeclared (and the box is a **block level element**)
 We can think of them as really really long and skinny rectangles, that just so happen to wrap at every line. They are able to have margin, padding, borders just like any other box.
 
 # Responsive vs mobile-first design
+Esraa
 
 # What are your options for creating a grid system? What are the pros and # cons of each?
 
