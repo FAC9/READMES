@@ -105,7 +105,7 @@ repository, you can set up the included wiki through the sidebar navigation.
 Starting your wiki is simply a matter of clicking the wiki button and
 creating your first page.
 
-# Hoisting websites on GitHub Pages
+# Hosting websites on GitHub Pages
 
 ### Introduction
 Gt is a version control system that you can use locally on your machine, while GitHub and GitHub Pages hoist projects that use git on their servers.
