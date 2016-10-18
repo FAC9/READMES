@@ -1,3 +1,3 @@
-# README 
+# README
 
-I'm going to create merge conflicts
+This is the readme for FAC9 course
