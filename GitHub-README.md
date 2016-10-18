@@ -1,19 +1,20 @@
 Git versus GitHub
 =================
 
+Git and GitHub are two tools that work very well together to track your source code and make it easy to work with others. However, they don't have to be used together and have some important differences.
+
 ## Git
 
-Git is a distributed version control system. Version control is used to track and share changes (known as 'commits') to documents in a 'repository'. 'Distributed' means that each developer has a complete copy of the repository on their computer and there is no need to rely on a central server to track changes.
+Git is a distributed version control system created by Linus Torvalds in 2005 to help manage the Linux kernel's development. Version control software is used to track and share changes (known as 'commits') to documents in a 'repository'. Using version control means that you have a full history of changes to your documents and always know what version is the most up-to-date. Here 'distributed' means that each developer working on the repository has a complete copy with the full change history on their computer, with no need to rely on a central server to track changes.
 
-The basic process when using Git is to commit code changes to a branch of a repository. Keeping workflows in separate branches means that multiple people can be working on different parts of the codebase at once. Once the work in a branch is completed, it should be merged into the central, master branch.
+When using Git, you commit changes to a branch of the repository. Once you're finished with whatever you were working on the branch can be merged back into the central, master branch. This allows multiple people to be working on the same codebase at the same time.
 
-Once you've committed your changes, how do you share them? Git is designed so that you can easily `pull` changes that other people have made and `push` your own. You might do this by allowing collaborators to ssh into the repository on your computer, or by pushing all of your changes to a repository on a local server you all have access to.
+Once you're made your changes you need to share them with your collaborators. If there's only a couple you could allow them to ssh into your local repository and pull any changes. But what if you don't necessarily know who your collaborators will be, or they need to access the repository when your computer is not available? You need to store the repository on a server accessible to everyone. This is where GitHub comes in.
 
-This might work fine if you have access to the other people's computers, but what if you don't? What if you don't even know who the collaborators might be? This is where GitHub comes in.
 
 ## GitHub
 
-GitHub is a hosting service for git repositories. The main benefit of putting your repository on GitHub is to make collaboration easier.
+GitHub is a hosting service for git repositories created in 2007. The main benefit of putting your repository on GitHub is to make collaboration easier.
 
 Though you can use git without GitHub, it is difficult for other people to konw about your project and contribute to it. GitHub allows anyone to clone or fork your project and gives you an easy way to keep the public version up to date.
 
