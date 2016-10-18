@@ -330,3 +330,11 @@ It is worth exploring all three pre-processors, following online tutorials and e
 ### When should I not use a pre-processor?  
 
 Perhaps your project is small; a simple static website with minimal styles needed. A pre-processor may not be necessary. Either way, explore what options are available and what works best for you.
+
+
+
+# Lollipop Questions
+
+1. How would you find the total width of an element?
+2. Why is it important to follow Mobile-First design?
+3. List three reasons to use a pre-processor.
