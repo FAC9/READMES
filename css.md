@@ -63,7 +63,24 @@ If the `width` of a box is undeclared (and the box is a **block level element**)
 We can think of them as really really long and skinny rectangles, that just so happen to wrap at every line. They are able to have margin, padding, borders just like any other box.
 
 # Responsive vs mobile-first design
-Esraa
+
+Responsive Design :
+It is used to describe the possibility of websites adapting to various output devices. The layout, fonts, image sizes etc. change and or scale according to the size of the browser. This principle enables good readability and usability on desktops, tablets and smartphones.
+
+Mobile-first Design:
+primarily focusing on development for mobile devices.
+
+Graceful degradation arose out of a need to have a design function on as many browsers and platforms as possible. Designers and developers wanted to take advantage of new technology without excluding users with setups that didn’t have support. The general conclusion was to create and serve up the best experience possible, and then account for each possible degradation and ensure that despite any shortcomings, the site would remain functional.
+
+In terms of mobile web design, this meant that a full, standard website would scale back and gradually remove content and features as the viewport became smaller and the system simpler (no Flash support, etc.).
+
+Out of this trend arose a powerful new idea: progressive enhancement. In this version of the tale, you put your best foot forward on the mobile platform, providing the users with minimal screen real estate, processing power and third party plugins an amazing experience that both looks great and functions perfectly. As the need arises, the site can gradually be “enhanced” and even completely rethought for larger platforms with fewer constraints.
+
+the good news is that these two strategies aren’t competitive. In fact, you could say that they were made for each other.
+
+Responsive design is built around the concept of media queries that target specific devices and viewport sizes. With this in mind, you can code up your initial CSS given a mobile perspective and then use media queries to selectively serve up additional styling as the viewport size increases.
+
+This is likely the opposite of the method that you typically take with responsive design: start big and then reduce. Given the arguments above though, there’s obviously a lot of logic behind structuring your media queries from small to large.
 
 # What are your options for creating a grid system? What are the pros and # cons of each?
 
