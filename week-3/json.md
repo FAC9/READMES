@@ -8,9 +8,9 @@
 
 1) JSON evaluates to JS objects (uses JS syntax).
 
-<img src="http://www.javacreed.com/wp-content/uploads/2012/12/Json-Object-Hierarchy.png"/>JSON object hierarchy
+<img src="http://www.javacreed.com/wp-content/uploads/2012/12/Json-Object-Hierarchy.png"/><br>JSON object hierarchy
 
-<img src="http://twiki.org/p/pub/Blog/BlogEntry201503x1/json-objects.png"/> A JSON object may contain a hash with key/value pairs or an array with values.
+<img src="http://twiki.org/p/pub/Blog/BlogEntry201503x1/json-objects.png"/><br>A JSON object may contain a hash with key/value pairs or an array with values.
 
 2) Text format (like XML).
 
