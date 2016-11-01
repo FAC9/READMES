@@ -107,6 +107,8 @@ console.log(obj) // '{"name":"nick", "age":27}'
 
 ### Resources
 
+[JSON vs. XML Screencast](https://www.youtube.com/watch?v=Xd_6WW-wnKs&feature=youtu.be)
+
 [JSON.parse](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/JSON/parse)
 
 [JSON.stringify](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON/stringify)
