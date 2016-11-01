@@ -8,11 +8,14 @@
 
 **1)** JSON evaluates to JS objects (uses JS syntax).
 
-<img src="http://www.javacreed.com/wp-content/uploads/2012/12/Json-Object-Hierarchy.png" | width=50%/>
-JSON object hierarchy
 
+JSON object hierarchy  
+<img src="http://www.javacreed.com/wp-content/uploads/2012/12/Json-Object-Hierarchy.png" | width=50%/>
+
+
+A JSON object may contain arrays  
 <img src="http://twiki.org/p/pub/Blog/BlogEntry201503x1/json-objects.png"| width=50%/>
-A JSON object may contain arrays
+
 
 **2)** Text format (like XML).
 
@@ -24,9 +27,12 @@ A JSON object may contain arrays
 
 ### Usage
 
-JSON is a data format used for asynchronous communication between the browser and the server. It allows new data to be fetched from the server without reloading the page. It is implemented in AJAJ (Asynchronous JavaScript and JSON), a web development methodology equivalent to AJAX (Asynchronous JavaScript and XML), which uses XML as the data format. The data hosted on the server can either be stored in JSON itself or in other formats.
+JSON is a data format used for asynchronous communication between the browser and the server. It allows new data to be fetched from the server without reloading the page.
 
-Although JSON is derived from the literal object notation in JavaScript, it can be used with many programming languages.
+- It is implemented in AJAJ (Asynchronous JavaScript and JSON), a web development methodology equivalent to AJAX (Asynchronous JavaScript and XML).
+- The data hosted on the server can either be stored in JSON itself or in other formats.
+
+Although JSON is derived from JavaScript, it can be used with many programming languages.
 
 ## How are they different from 'normal' objects?
 
