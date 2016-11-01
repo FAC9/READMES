@@ -59,6 +59,9 @@ These are known as 'informational' codes, indicating that the request was receiv
 
 The server has received and approved the request headers and giving permission to the client to send the request body. This is useful when the client wants to post a large amount of data. The client first sends the headers. The server validates the headers and if it is content to receive the data sends the `100 Continue` response.
 
+#####101 Switching Protocols
+The requester has asked the server to switch protocols and the server has agreed to do so
+
 ####2xx
 
 These are success codes, indicating that the request was received and correctly processed :blush:.
@@ -71,6 +74,12 @@ All is well. If a resource was requested it will be provided.
 
 The request has been fulfilled and a new resource has been created. Its location is specified in a `Location` header or the request URL itself.
 
+#####202 Accepted
+The request has been accepted for processing, but the processing has not been completed. The request might or might not be eventually acted upon, and may be disallowed when processing occurs.
+
+#####203 Non-Authoritative Information (since HTTP/1.1)
+The server is a transforming proxy (e.g. a Web accelerator) that received a 200 OK from its origin, but is returning a modified version of the origin's response.
+
 #####204 No Content
 
 The request has been fulfilled and the server has no response body to send (headers will be sent). This could be used in a web app to indicate that an action was completed without navigating away from the current page.
@@ -78,6 +87,9 @@ The request has been fulfilled and the server has no response body to send (head
 ####3xx
 
 These indicate some kind of 'redirection'.
+
+#####300 Multiple Choices
+Indicates multiple options for the resource from which the client may choose (via agent-driven content negotiation). For example, this code could be used to present multiple video format options, to list files with different filename extensions, or to suggest word-sense disambiguation.
 
 #####301 Moved Permanently
 
@@ -89,7 +101,7 @@ A temporary redirection. Future requests may continue using the original URL, no
 
 #####303 See Other
 
-This is primarily intended for responding to `POST` requests. Remember that a server may respond to a `POST` request by storing the resource wherever it wants. It provides a `303 See Other` response to let the client know the resource's URL so that the user may bookmark it etc. 
+This is primarily intended for responding to `POST` requests. Remember that a server may respond to a `POST` request by storing the resource wherever it wants. It provides a `303 See Other` response to let the client know the resource's URL so that the user may bookmark it etc.
 
 #####304 Not Modified
 
@@ -109,7 +121,7 @@ These codes indicate some kind of error with the request.
 
 #####400 Bad Request
 
-The request was malformed in some way and the server could not understand it.
+The server cannot or will not process the request due to an apparent client error (e.g., malformed request syntax, too large size, invalid request message framing, or deceptive request routing).
 
 #####401 Unauthorized
 
@@ -123,13 +135,40 @@ The server understood what you requested but refuses to authorise it. It may giv
 
 The famous one! The client has requested a resource that the server doesn't know how to find.
 
-#####418 I'm a Teapot
+#####405 Method Not Allowed
+A request method is not supported for the requested resource; for example, a GET request on a form which requires data to be presented via POST, or a PUT request on a read-only resource.
 
+#####406 Not Acceptable
+The requested resource is capable of generating only content not acceptable according to the Accept headers sent in the request.
+
+#####408 Request Time-out
+The server timed out waiting for the request.
+
+#####411 Length Required
+The request did not specify the length of its content, which is required by the requested resource.
+
+#####412 Precondition Failed
+The server does not meet one of the preconditions that the requester put on the request.
+
+#####413 Payload Too Large
+The request is larger than the server is willing or able to process. Previously called "Request Entity Too Large"
+
+#####414 URI Too Long
+The URI provided was too long for the server to process. Often the result of too much data being encoded as a query-string of a GET request.
+
+#####418 I'm a Teapot
 Any attempt to brew coffee with a teapot should result in the error code `418 I'm a teapot`. The resulting entity body MAY be short and stout.
+
+#####426 Upgrade Required
+The client should switch to a different protocol such as TLS/1.0, given in the Upgrade header field.
 
 #####429 Too Many Requests
 
 The server is rate-limiting the client's requests and too many have been sent. The server may optionally provide a `Retry-After` headers saying how long to wait.
+
+#####431 Request Header Fields Too Large
+The server is unwilling to process the request because either an individual header field, or all the header fields collectively, are too large.
+
 
 ####5xx
 
@@ -139,6 +178,12 @@ This group of responses indicates an error with the server.
 
 The server has encountered a problem and can't fulfil the request. Normally this happens if the route handler has a bug in it.
 
+#####502 Bad Gateway
+The server was acting as a gateway or proxy and received an invalid response from the upstream server.
+
 #####503 Service Unavailable
 
 The server can't deal with your request due to temporary overload or scheduled maintenance. It might respond with a `Retry-After` header to let the client know how long to wait.
+
+#####508 Loop Detected
+The server detected an infinite loop while processing the request (sent in lieu of 208 Already Reported).
