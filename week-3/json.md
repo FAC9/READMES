@@ -8,11 +8,14 @@
 
 **1)** JSON evaluates to JS objects (uses JS syntax).
 
-<img src="http://www.javacreed.com/wp-content/uploads/2012/12/Json-Object-Hierarchy.png" | width=50%/>
-JSON object hierarchy
 
+JSON object hierarchy  
+<img src="http://www.javacreed.com/wp-content/uploads/2012/12/Json-Object-Hierarchy.png" | width=50%/>
+
+
+A JSON object may contain arrays  
 <img src="http://twiki.org/p/pub/Blog/BlogEntry201503x1/json-objects.png"| width=50%/>
-A JSON object may contain arrays
+
 
 **2)** Text format (like XML).
 
