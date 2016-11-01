@@ -30,7 +30,7 @@ Each request message consists of:
 - A _start line_, which contains three elements separated by spaces:
   - The _request method_, which describes the type of action being requested of the server.
   - The _request target_, which indicates what the method should be performed on - often a URL.
-  - The _protocol name and version_ - usually "HTTP/1.1".
+  - The _protocol name and version_ - usually "HTTP/1.0", although "HTTP/1.1" and "HTTP/2" see some use.
 - (Optional) One or more _header lines_.
   - Each header line is in the form 'keyword: value', and specifies a parameter of the request.
 - A _blank line_, which indicates to the server that there are no more header lines in the request.
