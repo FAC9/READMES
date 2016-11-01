@@ -42,7 +42,7 @@ The most commonly used methods for an HTTP request are _GET_ and _POST_.
 
 - The _GET_ method is used to request a particular file or resource from the server. If a GET request requires a query string, this is included as part of the URL within the request target.
 
-- The _POST_ method is often used to pass form data to a server, but can also be used for messages that require more security than is possible with _GET_. Unlike GET requests, POST requests carry query strings in the message body, and the parameters aren't stored in browser history or web server logs.
+- The _POST_ method is often used to pass form data to a server. _GET_ can be used for this, but some OSes snip URLs that are longer than 256 characters. Unlike GET requests, POST requests carry query strings in the message body, and the parameters aren't stored in browser history or web server logs.
 
 Other methods include _HEAD_, which returns HTTP headers but no document body; _PUT_, which is used to upload data to the server; _DELETE_, which deletes the specified resource; and _OPTIONS_, which returns the HTTP request methods that the server supports.
 
