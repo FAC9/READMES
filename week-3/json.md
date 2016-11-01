@@ -97,7 +97,17 @@ console.log(typeof obj == "string") // true
 console.log(obj) // '{"name":"nick", "age":27}'
 ```
 
+### Questions
+
+1) Name 4 distinct characteristics of JSON.
+
+2) Strings and numbers can be used as JSON values, what JS value types can you *not* include?
+
+3) What's the biggest difference between XML and JSON?
+
 ### Resources
+
+[JSON vs. XML Screencast](https://www.youtube.com/watch?v=Xd_6WW-wnKs&feature=youtu.be)
 
 [JSON.parse](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/JSON/parse)
 
