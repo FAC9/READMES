@@ -14,14 +14,7 @@ Create a readme on this topic
 
 ```module.exports``` is the object that's actually returned as the result of a ```require``` call.
 
-The ```exports``` variable is a shorthand alias for ```module.exports``` and it's initially set to that same object. So in your module you can add the following code:
-
-```
-var myFunc1 = function() { ... };
-var myFunc2 = function() { ... };
-exports.myFunc1 = myFunc1;
-exports.myFunc2 = myFunc2;
-```
+The ```exports``` variable is a shorthand alias for ```module.exports``` and it's initially set to that same object. 
 
 ![module_export](./images/modules_explained.jpg)
 
@@ -45,26 +38,24 @@ Our simple_math.js file becomes more useful if the functions can be utilized els
 
 -  Let's add this on the first line
 
-    ```
-          var exports = module.exports = {};
-    ```
+```
+  var exports = module.exports = {};
+```
 
 - We have to assign all the expressions to the export object that we want to be available in other files.
 There is more than one way to do this:
 
-  ```
-  exports.add = function(a,b){return a+b;};
-  exports.mutiple =function(a,b){return a*b;};
-  ```
-
+```
+exports.add = function(a,b){return a+b;};
+exports.mutiple =function(a,b){return a*b;};
 ```
 
-    module.exports = {
+```
+module.exports = {
      add : function(a,b){return a+b;};
      multiple: function(a,b){return a*b;};
-    };
-
- ```
+};
+```
 
 Now ```exports``` and ```module.exports()``` all reference the same object.
 
@@ -138,4 +129,4 @@ We  overrode ```exports```, ```exports``` refers to a new object, while ```modul
 - [sitepoint tutorial](https://www.sitepoint.com/understanding-module-exports-exports-node-js/)
 - [YouTube tutorial](https://www.youtube.com/watch?v=qLc29euevzc&index=14&list=PLrUFyg1unBb88J0r7gvJ1T01WN_pp83Lz)
 - [bytearcher.com](http://bytearcher.com/articles/writing_modules/)
--[liangzan blog](http://blog.liangzan.net/blog/2012/06/04/how-to-use-exports-in-nodejs/)
+- [liangzan blog](http://blog.liangzan.net/blog/2012/06/04/how-to-use-exports-in-nodejs/)
