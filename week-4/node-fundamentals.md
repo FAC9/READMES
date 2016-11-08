@@ -87,7 +87,6 @@ server.listen(PORT, function(){
 - `server.listen()` may be called multiple times, each time re-opening the server.
 - `server.on()` - allows you to bind callbacks to events.
 - `server.close()` - stops the server from accepting new connections.
->>>>>>> 75c68fbcea1ed4ea08d4847ab4777544ea3f6d1f
 
 ### Investigate the core modules: url, path, querystring, and their methods. (Marko)
 
