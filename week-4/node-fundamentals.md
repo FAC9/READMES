@@ -87,7 +87,6 @@ server.listen(PORT, function(){
 - `server.listen()` may be called multiple times, each time re-opening the server.
 - `server.on()` - allows you to bind callbacks to events.
 - `server.close()` - stops the server from accepting new connections.
->>>>>>> 75c68fbcea1ed4ea08d4847ab4777544ea3f6d1f
 
 ### Investigate the core modules: url, path, querystring, and their methods. (Marko)
 
@@ -158,7 +157,7 @@ _(using '/home/user/dir/file.txt' as an example path, on POSIX)_
 ** Other useful `path` methods **
 
 | method name | description | example use | example output |
-|---|---|---|
+|---|---|---|---|
 | `path.normalize (path)` | normalizes the given path, resolving `..` and `.` segments | `path.normalize ('/foo/bar//baz/asdf/quux/..')` | `'/foo/bar/baz/asdf'` |
 | `path.join (path)` | joins all given path segments together using the platform specific separator as a delimiter, then normalizes the resulting path | `path.join ('/foo', 'bar', 'baz/asdf', 'quux', '..')` | `'/foo/bar/baz/asdf'` |
 | `path.relative (from, to)` | returns the relative path from `from` to `to` | `path.relative ('/data/orandea/test/aaa', '/data/orandea/impl/bbb')` | `'../../impl/bbb'` |
