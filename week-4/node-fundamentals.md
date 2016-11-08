@@ -12,7 +12,6 @@ Create a readme on this topic
 
 ### Look into module.exports. How does it work (Nori)
 
-### How does module.exports work?
 ```module.exports``` is the object that's actually returned as the result of a ```require``` call.
 
 The ```exports``` variable is a shorthand alias for ```module.exports``` and it's initially set to that same object. So in your module you can add the following code:
