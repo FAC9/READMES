@@ -157,7 +157,7 @@ _(using '/home/user/dir/file.txt' as an example path, on POSIX)_
 ** Other useful `path` methods **
 
 | method name | description | example use | example output |
-|---|---|---|
+|---|---|---|---|
 | `path.normalize (path)` | normalizes the given path, resolving `..` and `.` segments | `path.normalize ('/foo/bar//baz/asdf/quux/..')` | `'/foo/bar/baz/asdf'` |
 | `path.join (path)` | joins all given path segments together using the platform specific separator as a delimiter, then normalizes the resulting path | `path.join ('/foo', 'bar', 'baz/asdf', 'quux', '..')` | `'/foo/bar/baz/asdf'` |
 | `path.relative (from, to)` | returns the relative path from `from` to `to` | `path.relative ('/data/orandea/test/aaa', '/data/orandea/impl/bbb')` | `'../../impl/bbb'` |
