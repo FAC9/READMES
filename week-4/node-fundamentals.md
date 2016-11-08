@@ -36,7 +36,7 @@ function multiple(a,b){
  #### How to export a module
 Our simple_math.js file becomes more useful if the functions can be utilized elsewhere. We can refactor in three steps.
 
--  Let's add this on the first line
+-  Default values for ```exports``` and ```module.exports```.
 
 ```
   var exports = module.exports = {};
@@ -81,7 +81,7 @@ simple_math.multiple(3,4);
 
 #### module.exports vs export in Node.js
 
-Just for explanation you can imagine that at the beginning of your there is this code.
+Just for explanation you can imagine that at the beginning of your file there is this code.
 ```
 var module = new Module(...);
 var exports = module.exports;
