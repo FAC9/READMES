@@ -56,7 +56,8 @@ You do however need to ensure that you are listening on the correct server.
 ```
 var port = (process.env.PORT || 3000)
 ```
-
+## Deploying your app on Heroku - tutorial
+See a presentation on [Google slides](https://docs.google.com/presentation/d/10BSVkBYyDEG8vHkppH0_1czU_fXjeZRNj7xCtUM6_VQ/edit?usp=sharing)
 
 # What is the env2 module?
 We have created [a presentation on Google slides](https://docs.google.com/presentation/d/1Un5C71yCXXU9wMxsphM0agsqX4QlSe1zA_g2nHbgEU4/edit#slide=id.p) to address the following topics:
