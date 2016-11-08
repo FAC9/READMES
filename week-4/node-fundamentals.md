@@ -120,7 +120,7 @@ exports = function Message() {
 }
 ```
 
-Because with this exports reference doesn't 'point' anymore to the object where module.exports points, so there is not a relationship between exports and module.exports anymore. In this case module.exports still points to the empty object {} which will be returned.
+Because with this ```exports``` reference doesn't 'point' anymore to the object where ```module.exports``` points, so there is not a relationship between ```exports``` and ```module.exports``` anymore. In this case module.exports still points to the empty object {} which will be returned.
 
 We  overrode ```exports```, ```exports``` refers to a new object, while ```module.exports``` refers to the original object. When we require the file, the object, to which ```module.export``` refers will be returned.
 
