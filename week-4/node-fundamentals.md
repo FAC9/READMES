@@ -32,8 +32,8 @@ function multiple(a,b){
 };
 
 ```
-
- #### How to export a module
+#### How to export a module
+ 
 Our simple_math.js file becomes more useful if the functions can be utilized elsewhere. We can refactor in three steps.
 
 -  Default values for ```exports``` and ```module.exports```.
