@@ -62,7 +62,7 @@ Now ```exports``` and ```module.exports()``` all reference the same object.
 #### Importing a module
  Let's import all our  math functions to main.js.
 
-- Node.js uses the ```require``` keyword to import modules.
+- Node.js uses the ```require``` keyword to import modules. How one can imagine the implementation of require.
 
 ```
 var require = function(path){
