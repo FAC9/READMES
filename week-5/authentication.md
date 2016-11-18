@@ -33,6 +33,16 @@ Problems - the following are not scalable:
 - requires the server to import each client's certificate into its trusted certificate store
 
 
+## HTTP Basic authentication
+Sending an encoded username and password on every HTTP request that needs authentication. This is achieved through a dedicated HTTP header.  
+But! This method would mean that the user would have to enter their login credentials every single time an HTTP request is sent. The client (i.e. browser) therefore needs to store, or cache, the credentials for a period of time.
+
+Drawbacks:
+- fundamentally insecure
+- no standard way to log out
+- login is not customisable
+- requires broswer to cache credentials securely - must be paired with SSL/TLS (see problems above)
+
 
 ## What are some of the different ways Hapi implements authentication?
 
