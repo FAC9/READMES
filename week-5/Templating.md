@@ -134,13 +134,13 @@ server.route({
 ```
 So if the user navigates to '/timmy', and the view file is configured like this;
 ```html
-<div>My Name Is {name}</div>
+<div>My Name Is {{name}}</div>
 ```
 Then the server will combine the parameters given with the template file to output the following to the client-
 ```html
 <div>My Name Is Timmy</div>
 ```
-To define html data to be rendered in the view file, you can additionally use {{{}}} syntax;
+To define html data to be rendered in the view file, you can additionally use triple curly brace syntax {{{ }}};
 ```html
 <!DOCTYPE html>
 <html>
@@ -159,7 +159,7 @@ To define html data to be rendered in the view file, you can additionally use {{
  </body>
 </html>
 ```
-Here, {{{content}}} represents other views that can be loaded into this file. This is known as templating. Layout files allow you to link view files together to minimise repetition (e.g in blog posts, where the same html head tags and styles are used for different blogs). To set a common layout file in your project, save it as a layout.html file in the views folder, then in the .views method on the Hapi server, set the layout value to true;
+Here, {{{content}}} represents other views that can be loaded into this file. This is known as templating. Layout files allow you to link view files together to minimise repetition (e.g in blog posts, where the same html head tags and styles are used for different blogs). To set a common layout file in your project, save it as a layout.html file in the views folder, then in the .views method on the Hapi server, set the layout value to true. By default, Hapi will look for a file called 'layout.html' when this is the case;
 ```javascript
 server.views({
  engines: {
@@ -213,3 +213,4 @@ Note that the two are not mutually exclusive. Most websites will use both server
 - [Template processor](http://www.wikiwand.com/en/Template_processor#/Template_engine_2)
 - [The top 5 JavaScript templating engines](http://www.creativebloq.com/web-design/templating-engines-9134396)
 - [Hapi — Create and Use Custom Handlebars Helpers](https://futurestud.io/tutorials/how-to-create-and-use-custom-handlebars-helpers-with-hapi)
+- [What are the tradeoffs of client-side rendering vs. server-side rendering?](https://www.quora.com/What-are-the-tradeoffs-of-client-side-rendering-vs-server-side-rendering)
