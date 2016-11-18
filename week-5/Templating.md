@@ -15,14 +15,7 @@ A diagram illustrating all of the basic elements and processing flow of a templa
 #### Benefits of using template engines
  - encourages good code organization (**separate model (= logic)** and **view (= presentation)**),
  - reusable templates,
- - provides a more elegant way to create dynamic DOM elements.
-
-#### Resources
-
-- [Template engines](http://www.wikiwand.com/en/Template_processor#/Template_engine_2)
-
-- [Model-View concept](http://www.simple-is-better.org/template/)
-
+ - provides a more elegant way to create dynamic DOM elements (client-side).
 
 ### What is Handlebars.js? (group1)
 
@@ -63,7 +56,8 @@ When configuring `server.views`, the `helpersPath` property is used to let Hapi 
 ### Additional -  How would you use Hapi's views interface to serve dynamic content? (real life example) (group 1)
 
 ### Resources
-
+- [Template engines](http://www.wikiwand.com/en/Template_processor#/Template_engine_2)
+- [Model-View concept](http://www.simple-is-better.org/template/)
 - [The top 5 JavaScript templating engines](http://www.creativebloq.com/web-design/templating-engines-9134396)
 - [Hapi — Create and Use Custom Handlebars Helpers](https://futurestud.io/tutorials/how-to-create-and-use-custom-handlebars-helpers-with-hapi)
 
