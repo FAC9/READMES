@@ -116,7 +116,7 @@ compare(data, encrypted, cb)
 ```
 var Bcrypt = require('bcrypt');
 var SALT_WORK_FACTOR = 10;
-var pass = '123456789';
+var pass = 'test_password';
 
 Bcrypt.genSalt(SALT_WORK_FACTOR, function(err, salt) {
         if(err) {
@@ -127,8 +127,9 @@ Bcrypt.genSalt(SALT_WORK_FACTOR, function(err, salt) {
                 if(err) {
                         return console.error(err);
                 }
-
-                console.log(hash);
+                console.log('salt',salt); //salt $2a$10$LZSP.ymzVGhYk..8b/KQ9O
+                console.log(pass); // test_password
+                console.log('hash',hash); // hash $2a$10$LZSP.ymzVGhYk..8b/KQ9ODd4K5eVPa42yGKNDCtLZUQVXwqRbvK2
 
                 Bcrypt.compare(pass, hash, function(err, isMatch) {
                         if(err) {
@@ -141,6 +142,8 @@ Bcrypt.genSalt(SALT_WORK_FACTOR, function(err, salt) {
         });
 });
 ```
+
+
 ## Authentication example
 
 - hapi-auth-basic is plugin (you have to register plugins)
