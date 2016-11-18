@@ -1,6 +1,9 @@
 # Caching and cookies
 
+See our demo project on COOKIES README [here](https://github.com/limeyb7/cookies-with-hapi-demo/tree/master).
+
 ## Client-side storage
+>>>>>>> master
 
 ### Client-side storage is a minefield
 
