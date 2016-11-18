@@ -99,7 +99,7 @@ server.views({
  engines: {
    html: require('handlebars')
  },
- relateTo: __dirname,
+ relativeTo: __dirname,
  path: 'views'
 })
 ```
