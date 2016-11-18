@@ -1,5 +1,6 @@
 # Cache and cookies
 
+See our demo project and README [here](https://github.com/limeyb7/cookies-with-hapi-demo/tree/master).
 
 ## Databases
 
