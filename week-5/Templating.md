@@ -1,6 +1,21 @@
 ## Templating
 
-### What is a templating engine and why would you use it? (group1)
+### What is a templating engine and why would you use it?
+
+#### Template engine
+
+- software designed to combine one or more templates with a data model to produce one or more result documents,
+- a main purpose is to process templates and data to output text.
+
+A diagram illustrating all of the basic elements and processing flow of a template engine:
+
+![alt text](images/template-engine.png)
+
+
+#### Benefits of using template engines
+ - encourages good code organization (**separate model (= logic)** and **view (= presentation)**),
+ - reusable templates,
+ - provides a more elegant way to create dynamic DOM elements (client-side).
 
 ### What is Handlebars.js? (group1)
 
@@ -41,7 +56,8 @@ When configuring `server.views`, the `helpersPath` property is used to let Hapi 
 ### Additional -  How would you use Hapi's views interface to serve dynamic content? (real life example) (group 1)
 
 ### Resources
-
+- [Template engines](http://www.simple-is-better.org/template/)
+- [Template processor](http://www.wikiwand.com/en/Template_processor#/Template_engine_2)
 - [The top 5 JavaScript templating engines](http://www.creativebloq.com/web-design/templating-engines-9134396)
 - [Hapi — Create and Use Custom Handlebars Helpers](https://futurestud.io/tutorials/how-to-create-and-use-custom-handlebars-helpers-with-hapi)
 
