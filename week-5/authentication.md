@@ -1,7 +1,31 @@
 # Authentication
 
-##-What is authentication and why do we need it when building web applications?
+## What is authentication and why do we need it when building web applications?
 
+On the most basic level, authentication is needed when a server is set up to not allow access to its files unless passed the correct username and password. The process compares the credentials provided by the client with a database of authorised users.
+
+There are different processes to identify a user on subsequent requests such as cookies and authentication tokens.
+
+The problem with password-based authentication:
+- User names are frequently a combination of the individual’s name, which makes them easy to guess.
+- If constraints are not imposed, people often create weak passwords and even strong passwords may be stolen, accidentally revealed or forgotten.
+
+#### The three main types of Authentication:
+  1. Knowledge factors (password) - a category of authentication credentials consisting of information that the user possesses, such as a personal identification number (PIN), a user name, a password or the answer to a secret question.
+
+  ![alt text](http://securityxploded.com/images/iepassworddecryptor_screenshot_httpauth.jpg)
+  2. Possession factors (smart card) - a category of credentials based on items that the user has with them, typically a hardware device such as a security token or a mobile phone used in conjunction with a software token.
+
+  ![text](http://quendororg.s3-website-us-east-1.amazonaws.com/2009/03/token.jpeg)
+
+  3. Inherence factors (biometrics) - a category of user authentication credentials consisting of elements that are integral to the individual in question, in the form of biometric data.
+
+  ![alt text](https://qph.ec.quoracdn.net/main-qimg-4378e70eaf1a767051f4c654503fc23a-c?convert_to_webp=true)
+
+Resources:
+- https://blog.risingstack.com/web-authentication-methods-explained/
+- https://codingkilledthecat.wordpress.com/2012/09/04/some-best-practices-for-web-app-authentication/
+- https://msdn.microsoft.com/en-us/library/ff648647.aspx#c04618429_007
 
 ## What are authentication schemes and strategies?
 
