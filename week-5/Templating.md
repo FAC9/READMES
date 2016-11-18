@@ -190,14 +190,22 @@ Now, when the user navigates to '/timmy', the handler will return the contents o
 </html>
 ```
 
-An alternative strategy to rendering this content on the server side would be responding with dynamic content to the client, with client-side JavaScript that can render content based on API calls. Notable libraries/frameworks are available to help generate dynamic content on the client side include Angular, BackBone and Ember.
-
 ### Advantages of using server side rendering vs rendering dynamic content on the client
 
-There are three important benefits of server side rendering;
-- Your content is visible to search engines like Google.
-- The page loads faster. There's no "white page" while the browser downloads the rendering code and data and runs the code.
-- It maintains the idea that pages are documents, and if you ask a server for a document by URL, you get back the text of the document rather than a program that generates that text using a complicated API.
+**Server-side rendering**: Server renders the HTML page before sending it to the client.
+**Client-script rendering**: JavaScript running in the browser produces HTML or manipulates the DOM
+
+Benefits of server side rendering:
+- Your content is visible to search engines like Google
+- The page loads faster. There is no delay between retrieving the server response and rendering the page
+- It maintains the idea that pages are documents. If you ask a server for a document by URL, you get back the text of the document rather than instructions on how to manipulate the document.
+- Ensures that there are few browser compatibility issues, as the server deals with the content manipulation..
+
+Benefits of client-side rendering:
+- You can update the screen instantly when the user clicks, rather than waiting for the server to respond.
+- Great for animated or highly interactive content.
+
+Note that the two are not mutually exclusive. Most websites will use both server-side and client-side rendering, with static, navigable content being rendered on the server, app-like interactivity being handled by the code running in the browser.
 
 ### Resources
 
