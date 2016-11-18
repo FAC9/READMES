@@ -82,7 +82,6 @@ server.register(require('vision'), () => {
    }
  })
 //...
-})
 ```
 Views takes a single argument, which is an object containing engine keys (which is itself an object). The engine keys object contains a mapping of file extensions to engines. The Views method needs a path of where to find the views;
 ```javascript
