@@ -56,8 +56,7 @@ When configuring `server.views`, the `helpersPath` property is used to let Hapi 
 ### Additional -  How would you use Hapi's views interface to serve dynamic content? (real life example) (group 1)
 
 ### Resources
-- [Template engines](http://www.wikiwand.com/en/Template_processor#/Template_engine_2)
-- [Model-View concept](http://www.simple-is-better.org/template/)
+- [Template engines](http://www.simple-is-better.org/template/)
 - [The top 5 JavaScript templating engines](http://www.creativebloq.com/web-design/templating-engines-9134396)
 - [Hapi — Create and Use Custom Handlebars Helpers](https://futurestud.io/tutorials/how-to-create-and-use-custom-handlebars-helpers-with-hapi)
 
