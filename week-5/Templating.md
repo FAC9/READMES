@@ -192,7 +192,7 @@ Now, when the user navigates to '/timmy', the handler will return the contents o
 
 ### Advantages of using server side rendering vs rendering dynamic content on the client
 
-**Server-side rendering**: Server renders the HTML page before sending it to the client.
+**Server-side rendering**: Server renders the HTML page before sending it to the client.  
 **Client-script rendering**: JavaScript running in the browser produces HTML or manipulates the DOM
 
 Benefits of server side rendering:
