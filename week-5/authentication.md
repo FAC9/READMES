@@ -24,7 +24,7 @@ The problem with password-based authentication:
 
 ## What are authentication schemes and strategies?
 
-## SSL/TLS Mutual Authentication
+### SSL/TLS Mutual Authentication
 This requires a secure channel to be established through digital certificates, before credentials will be shared.
 
 ### What is a digital certificate and how are they used?
