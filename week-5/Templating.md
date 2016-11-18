@@ -3,7 +3,36 @@
 ### What is a templating engine and why would you use it? (group1)
 
 ### What is Handlebars.js? (group1)
-- Superset of moustache
+
+- One of the most popular JavaScript templating engines
+- Not specific to Hapi or Node.js, can be used for any JS templating
+- Builds on top of Mustache templating engine
+- In Hapi, handlebars can be used as the engine for rendering `html` templates
+
+As in Mustache, handlebars templates look like regular HTML, with embedded placeholders (e.g. `{{expression}}`).
+
+``` html
+<body>
+  <h1>{{title}}</h1>
+  <section>
+    {{introduction}}
+  </section>
+</div>
+```
+
+In Hapi, parameters that are provided by the client request are available in the `query` object.
+
+``` html
+<div>{{query.paramName}}</div>
+```
+
+Handlebars provides additional helpers (functions used within templates), such as:
+- `{{#with}}` helper takes an object and then allows you to refer to its properties
+- `{{#each}}` helper allows you to loop through an object's properties
+
+To implement custom helpers, these can be provided a in separate `js` file and exported using `module.exports`. The name of each helper file will be used as the helper name in the template.
+
+When configuring `server.views`, the `helpersPath` property is used to let Hapi know where to find our custom handlebars helpers.
 
 ### Example walkthrough... (group 2 does this)
 
@@ -11,6 +40,10 @@
 
 ### Additional -  How would you use Hapi's views interface to serve dynamic content? (real life example) (group 1)
 
+### Resources
+
+- [The top 5 JavaScript templating engines](http://www.creativebloq.com/web-design/templating-engines-9134396)
+- [Hapi — Create and Use Custom Handlebars Helpers](https://futurestud.io/tutorials/how-to-create-and-use-custom-handlebars-helpers-with-hapi)
 
 ### Example
 
