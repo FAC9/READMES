@@ -23,6 +23,10 @@ The problem with password-based authentication:
   ![alt text](https://qph.ec.quoracdn.net/main-qimg-4378e70eaf1a767051f4c654503fc23a-c?convert_to_webp=true)
 
 
+<<<<<<< HEAD:week-5/authentication.md
+=======
+
+>>>>>>> master:week-5/authentication_.md
 ## What are authentication schemes and strategies?
 
 ## SSL/TLS Mutual Authentication
@@ -63,7 +67,10 @@ Drawbacks:
 - login is not customisable
 - requires broswer to cache credentials securely - must be paired with SSL/TLS (see problems above)
 
+<<<<<<< HEAD:week-5/authentication.md
 
+=======
+>>>>>>> master:week-5/authentication_.md
 ## What are some of the different ways Hapi implements authentication?
 
 
