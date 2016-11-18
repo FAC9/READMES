@@ -1,6 +1,28 @@
 ## Templating
 
-### What is a templating engine and why would you use it? (group1)
+### What is a templating engine and why would you use it?
+
+#### Template engine
+
+- software designed to combine one or more templates with a data model to produce one or more result documents,
+- a main purpose is to process templates and data to output text.
+
+A diagram illustrating all of the basic elements and processing flow of a template engine:
+
+![alt text](images/template-engine.png)
+
+
+#### Benefits of using template engines
+ - encourages good code organization (**separate model (= logic)** and **view (= presentation)**),
+ - reusable templates,
+ - provides a more elegant way to create dynamic DOM elements.
+
+#### Resources
+
+- [Template engines](http://www.wikiwand.com/en/Template_processor#/Template_engine_2)
+
+- [Model-View concept](http://www.simple-is-better.org/template/)
+
 
 ### What is Handlebars.js? (group1)
 - Superset of moustache
