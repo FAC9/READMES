@@ -95,7 +95,7 @@ Suppose you want to get data from two tables named A (containing customer data) 
 
 The INNER JOIN clause returns rows in table A that have the corresponding rows in the table B.
 
-<img src="img/inner-join.png" style="width: 250px;"/>
+<img src="tables-structure-img/inner-join.png" width="300"/>
 
 __Example:__
 
@@ -138,7 +138,7 @@ Result:
 
 The LEFT JOIN clause returns the rows in table A that may or may not have corresponding rows in the table B.
 
-<img src="img/left-join.png" style="width: 250px;"/>
+<img src="tables-structure-img/left-join.png" width="300"/>
 
 ``` sql
 SELECT * FROM A  
@@ -158,7 +158,7 @@ Result:
 
 The OUTER JOIN clause returns the rows in table A that may or may not have corresponding rows in the table B, as well as all rows in table B that do not have corresponding rows in table A.
 
-<img src="img/outer-join.png" style="width: 250px;"/>
+<img src="tables-structure-img/outer-join.png" width="300"/>
 
 ``` sql
 SELECT * FROM A    
@@ -179,7 +179,7 @@ Result:
 
 To return all rows in table A that do not have corresponding rows in table B:
 
-<img src="img/example4.png" style="width: 250px;"/>
+<img src="tables-structure-img/example4.png" width="300"/>
 
 ``` sql
 SELECT * FROM A  
@@ -188,7 +188,7 @@ WHERE B.customer_id IS null;
 ```
 To return all rows unique to Table A and all rows unique to Table B:
 
-<img src="img/example5.png" style="width: 250px;"/>
+<img src="tables-structure-img/example5.png" width="300"/>
 
 ``` sql
 SELECT  
