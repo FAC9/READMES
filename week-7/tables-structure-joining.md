@@ -25,11 +25,11 @@ It can return L + I, R + I, or   L + R + I
 
 http://stackoverflow.com/questions/38549/what-is-the-difference-between-inner-join-and-outer-join
 
-![Complete Join Diagram]('images/vens.png')
+![Complete Join Diagram](images/vens.png)
 
 
 ## Give a practical example of a database with at least 2 tables.
 
 This example database shows a possible database used by an online store.
 
-![erd]('images/sql-model.jpg')
+![erd](images/sql-model.jpg)
