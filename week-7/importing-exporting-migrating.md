@@ -34,14 +34,14 @@ We'll write some SQL for that:
 
 ```
 INSERT INTO cats (name, color, catLoverId) VALUES
-SELECT cat_name, cat_color, id FROM catLovers
+  SELECT cat_name, cat_color, id FROM catLovers
 ```
 - Now all your data is in one place, but you've got some extra columns left in your cat_lovers table which you don't really need any more. In practice, these columns aren't causing you any problems, so you might want to leave them in place for an interim period so that you can be 500% sure that none of your data has been lost in migration.
 - Later on, we might want to delete the old data for good. After all, some of those cats might have changed color by now. We can do this with SQL:
 
 ```
 ALTER TABLE cat_lovers
-DROP COLUMN (cat_name, cat_color)
+  DROP COLUMN (cat_name, cat_color)
 ```
 
 - Our lovely two-columned database now looks more like this:
