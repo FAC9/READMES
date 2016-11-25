@@ -7,6 +7,7 @@
 ## Migrations in Postgres
 
 ## Resources
+<<<<<<< HEAD
 - Put links here
 
 
@@ -24,3 +25,7 @@ https://kostasbariotis.com/data-migration-with-nodejs/ <<== best one so far!
 https://www.wlaurance.com/2014/04/Using-PostgreSQL-and-Node/ <<== also seems nice
 
 http://dba.stackexchange.com/questions/10913/best-practices-for-schema-changes-and-data-migrations-to-a-live-database-without
+=======
+- https://www.postgresql.org/docs/9.1/static/backup-dump.html
+- https://www.postgresql.org/docs/8.1/static/app-pgdump.html
+>>>>>>> afb4e6b8bf392dd156b7ac08b880b33fd1728724
