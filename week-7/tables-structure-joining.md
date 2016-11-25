@@ -33,3 +33,5 @@ http://stackoverflow.com/questions/38549/what-is-the-difference-between-inner-jo
 This example database shows a possible database used by an online store.
 
 ![erd](images/sql-model.jpg)
+
+This diagram may be initally confusing as rows in the diagram correspond to columns of data in the actual table. If you imagine this diagram as representation of what information is included in the actual database you should be okay!
