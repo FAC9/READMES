@@ -1,22 +1,24 @@
+# Testing
+
 ## If not mocking the database, how do you ensure you don't fill your database with test insertions?
 
-To test a real database, you need a way to create a test table at the start of each test, then test your database calls, and finally drop your table after each test.
+To test a real database, you either need a way to create a test table at the start of each test, then test your database calls, and finally drop your table after each test... or have an existing test table in place, and simply ensure that after adding test insertions you remove them after testing.
 
-If you want to work with similar table data in your tests, you can use SQLs VIEW method:
+If you want to work with a similar table data in your tests, you can set up a View with SQLs VIEW method:
 ```sql
 CREATE VIEW my_view AS
 SELECT column_name(s)
 FROM original_table
 WHERE condition
 ```
-Views act like temporary tables in memory. You can perform the same actions as you would a real table. After working with your view table, you can drop it...
+Views act like temporary tables in memory. You can perform the same actions as you would a real table. You can even combine multiple tables into one view. After working with your view table, you can drop it...
 ```sql
 DROP VIEW my_view
 ```
 
-Otherwise, you can simply create a table in the same way, and drop it after testing.
+Otherwise, you can simply create a new table as you are testing, then drop it afterwards.
 
-To integrate this approach in a real testing framework, you would perform the following tasks-
+To integrate the create/drop method in a real testing framework, you would need to perform the following tasks-
 1. (Before Test) Create test database from desired testing table.
 2. Perform actions (e.g add/delete/modify data).
 3. Use SELECT queries on this test table, and asserts to test that data is manipulated.
@@ -24,7 +26,20 @@ To integrate this approach in a real testing framework, you would perform the fo
 
 Many testing frameworks allow beforeEach and AfterEach as a testing method, so steps **1** and **4** would be performed before and after each test.
 
-Check out [redtape](https://github.com/eugeneware/redtape) for examples on how to use a tape like testing environment with before each and after each methods.
+Check out [redtape](https://github.com/eugeneware/redtape) for examples on how to use a tape like testing environment with before each and after each methods. When testing, an example test could appear like so;
+```javascript
+test('checks results', function() {
+  var client = new Client();
+  client.connect();
+    client.query('SELECT * FROM person WHERE name = $1', ['Brian'], assert.calls(function(err, result) {
+      t.notOk(err);
+      t.equal(result.rows[0].name, 'Brian');
+      client.end();
+      t.end();
+    }))
+  }));
+})
+```
 
 ## Research and figure out how to use a mocking library.
 ## What are some advantages and disadvantages of mocking?
@@ -46,4 +61,3 @@ Check out [redtape](https://github.com/eugeneware/redtape) for examples on how t
 - Test data retrieved from your database is shown accurately in your web application
 
   Find out more: http://www.guru99.com/web-application-testing.html
-  
