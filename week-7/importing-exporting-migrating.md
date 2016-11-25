@@ -13,7 +13,22 @@ The two methods to do this are:
 - Apex SQL Studio
 - SQuirreL SQL
 
-## How to export databases
+#### Walk through to import a sql file into your database.
+
+1. Create a database / decide which database you want to import into:<br>
+<br> ![](https://github.com/FAC9/READMES/blob/master/week-7/images/1.%20Create%20database.png)
+
+2. As you can see the database is empty:<br>
+<br> ![](https://github.com/FAC9/READMES/blob/master/week-7/images/2.%20The%20database%20is%20empty.png)
+
+3. Get the sql file that you want to import:<br>
+<br> ![](https://github.com/FAC9/READMES/blob/master/week-7/images/3.%20beg:borrow:steal%20sql%20file.png)
+
+4. Type the command into Bash, NOT in postgresql command line:<br>
+<br> ![](https://github.com/FAC9/READMES/blob/master/week-7/images/4%20Command%20to%20import%20database.png)
+
+5. The database has been imported (here is the proof):<br>
+<br> ![](https://github.com/FAC9/READMES/blob/master/week-7/images/5.%20Full%20database!.png)
 
 ## Migrations in Postgres
 
