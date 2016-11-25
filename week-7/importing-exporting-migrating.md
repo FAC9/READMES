@@ -93,7 +93,7 @@ ALTER TABLE cat_lovers
 
 ## Resources
 
-The [Wikipedia entry on ETL](https://en.wikipedia.org/wiki/Extract,_transform,_load) explains a little more about the pattern, its history and its uses. 
+The [Wikipedia entry on ETL](https://en.wikipedia.org/wiki/Extract,_transform,_load) explains a little more about the pattern, its history and its uses.
 
 This [post on StackOverflow](http://dba.stackexchange.com/questions/10913/best-practices-for-schema-changes-and-data-migrations-to-a-live-database-without) informed the cats example and talks about how to minimize impact of database migrations
 
