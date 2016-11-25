@@ -12,7 +12,7 @@ This difference between inner and outer joins is commonly demonstrated using ~~b
 Why buck years of tradition?
 
 ![Venn Diagram of Inner and Outer link](/images/inout.png)
-![alt text](images/template-engine.png)
+![alt text](images/inout.png)
 
 
 IMAGINE TWO CIRCLES. THEY ARE PARTIALLY OVERLAPPING. THERE ARE THREE AREAS TO THIS DIAGRAM. THESE ARE THE INSIDE, THE OUTSIDE LEFT, THE OUTSIDE RIGHT. Lets call them I, L, and R.
