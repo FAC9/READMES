@@ -11,7 +11,7 @@
 This difference between inner and outer joins is commonly demonstrated using ~~buttocks~~ Venn Diagrams.
 Why buck years of tradition?
 
-![Venn Diagram of Inner and Outer link](/images/inout.png)
+![Venn Diagram of Inner and Outer link](images/inout.png)
 ![alt text](images/inout.png)
 
 
