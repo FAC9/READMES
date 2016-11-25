@@ -6,3 +6,6 @@
 - Data Integrity is maintained while creating , updating or deleting data in database.
 - Check response time of queries and fine tune them if necessary.
 - Test data retrieved from your database is shown accurately in your web application
+
+  Find out more: http://www.guru99.com/web-application-testing.html
+  
