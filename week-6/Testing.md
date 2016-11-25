@@ -28,6 +28,17 @@ Check out [redtape](https://github.com/eugeneware/redtape) for examples on how t
 
 ## Research and figure out how to use a mocking library.
 ## What are some advantages and disadvantages of mocking?
+### Advantages of mocking
+- using mock objects and data can be a good way to unit-test, but integration testing is needed to ensure that the system runs as a whole
+- if the real database (db) runs very slowly, a mock test of the schema or whole may be preferable
+- db can be big and complex; if you are testing whether additions to the db have worked you may unintentionally alter other data, which could be avoided if you use a mock db
+- even if db is not that complex, you may have reasons not to want to add something as part of a test and then remove it later (eg if it could prejudice statistics or user behaviour), in which case a mock db could be a better option
+
+### Disadvantages of mocking
+- the copy has to be very carefully maintained so it doesn't get out of date with the production version of the data and schema, and this is complicated and time-consuming
+- there are security and privacy implications to mock databases
+- once the db gets big, taking a copy of it and putting it into your dev environment can be a big deal
+
 ## What exactly needs testing about the database?
 - Test if any errors are shown while executing queries
 - Data Integrity is maintained while creating, updating or deleting data in database
