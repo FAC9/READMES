@@ -2,13 +2,24 @@
 
 ## How to import databases from an existing project
 
+The two methods to do this are:
+- GUI database client tool
+- The command-Line
+
+##### GUI tools:
+- SQL Server Management Studio
+- Toad for SQL Server
+- Database fishing tool
+- Apex SQL Studio
+- SQuirreL SQL
+
 ## How to export databases
 
 ## Migrations in Postgres
 
 ### What is a database schema?
 
-A database schema defines how a database is structured – the tables that exist and their names, how those tables are configured, the fields that those tables contain, and the data format for those fields. A schema describes how real-world (or conceptual) entities are modeled by the database.
+A database schema defines how a database is structured. It defines the tables that exist and their names, how those tables are configured, the fields that those tables contain, and the data format for those fields. A schema describes how real-world (or conceptual) entities are modeled by the database.
 
 The schema doesn’t contain any data in itself. It is simply a description of how data added to a database must be structured.
 
@@ -16,10 +27,9 @@ If you start working on a project with an existing database, the first thing you
 
 ![schema-image](http://www.codeproject.com/KB/database/UnitTestDbAppsWithNDbUnit/NDbUnitXPath.jpg)
 
-
 ### What is migration?
 
-Migration is the processing of transferring data from one schema to another. (It may also refer to the process of moving data between two different databases with the same schema, although this tends to be a simpler task - just export from one then import into the other.)
+Migration is the processing of transferring data from one schema to another - often within the same database. (It may also refer to the process of moving data between two different databases with the same schema, although this tends to be a simpler task - just export from one then import into the other.)
 
 ### When might you need to migrate a database?
 
@@ -42,17 +52,19 @@ When the data has been transformed and validated, you can then __load__ the tran
 - If you have a live site with live users, ideally you want to avoid downtime.
 - User data is very sensitive and not to be messed with.
 
-### Example: cat lovers database
+### Example: cat lovers database 🐱
 
 In our example, we have a really basic database with just one table. It stores a list of cat lovers and the names of their cats. This works OK for the organisation updating the cat lovers database for a few years, until some of the members start adopting new cats. The single-table database structure just isn't sufficient any more.
 
 It's time to scale.
 
-See below a visual representation of the cat lovers table, and then the schema for the new database:
+🐈🐈 🐈 🐈🐈🐈
+
+See below a visual representation of the cat lovers table, and then the schema for the new version of the database, to which we've added a new table and a few extra columns:
 
 ![image-1](./images/Database_schema1.png)
 
-Getting from catLovers database 1.0 to the proposed version would include a few steps. And of course it's important that none of the users' data goes missing or gets changed in the process.
+Even though our project is a very small one, getting from catLovers-database-1.0 to the proposed schema would include a few steps. And of course it's important that none of the users' data goes missing or gets accidentally changed in the process 🙀.
 
 We might do something like this:
 
@@ -66,8 +78,8 @@ We'll write some SQL for that:
 INSERT INTO cats (name, color, catLoverId) VALUES
   SELECT cat_name, cat_color, id FROM catLovers
 ```
-- Now all your data is in one place, but you've got some extra columns left in your cat_lovers table which you don't really need any more. In practice, these columns aren't causing you any problems, so you might want to leave them in place for an interim period so that you can be 500% sure that none of your data has been lost in migration.
-- Later on, we might want to delete the old data for good. After all, some of those cats might have changed color by now. We can do this with SQL:
+- Now all our data is in one place but we've got some extra columns left in our cat_lovers table which we don't really need any more. In practice, these columns aren't causing us any problems, so we'll leave them in place for an interim period so that we can be 500% sure that none of our data has been lost in migration.
+- Later on, we might want to delete the old data for good. After all, some of those cats might have changed colour by now. We can do this with SQL:
 
 ```
 ALTER TABLE cat_lovers
@@ -78,26 +90,12 @@ ALTER TABLE cat_lovers
 
 ![image_2](./images/Database_schema2.png)
 
-
-
-
-
+😻
 
 ## Resources
 
-- Put links here
+The [Wikipedia entry on ETL](https://en.wikipedia.org/wiki/Extract,_transform,_load) explains a little more about the pattern, its history and its uses. 
 
-This [post on StackOverflow](http://dba.stackexchange.com/questions/10913/best-practices-for-schema-changes-and-data-migrations-to-a-live-database-without) talks about how to minimize impact of database migrations and is fairly easy to understand:
+This [post on StackOverflow](http://dba.stackexchange.com/questions/10913/best-practices-for-schema-changes-and-data-migrations-to-a-live-database-without) informed the cats example and talks about how to minimize impact of database migrations
 
-Emily links
-- http://blog.honeybadger.io/zero-downtime-migrations-of-large-databases-using-rails-postgres-and-redis/
-- https://github.com/theoephraim/node-pg-migrate
-- https://devcenter.heroku.com/articles/heroku-postgres-import-export
-- https://kostasbariotis.com/data-migration-with-nodejs/ <<== best one so far!
-- https://www.wlaurance.com/2014/04/Using-PostgreSQL-and-Node/ <<== also seems nice
-- http://dba.stackexchange.com/questions/10913/best-practices-for-schema-changes-and-data-migrations-to-a-live-database-without
-
-Steve links
-- https://www.postgresql.org/docs/9.1/static/backup-dump.html
-- https://www.postgresql.org/docs/8.1/static/app-pgdump.html
-- https://www.postgresql.org/docs/8.1/static/backup.html
+Here's an [article](https://kostasbariotis.com/data-migration-with-nodejs/) that talks about migration in a node.js context
