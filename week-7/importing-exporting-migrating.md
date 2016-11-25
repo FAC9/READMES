@@ -2,6 +2,17 @@
 
 ## How to import databases from an existing project
 
+The two methods to do this are:
+- GUI database client tool
+- The command-Line
+
+##### GUI tools:
+- SQL Server Management Studio
+- Toad for SQL Server
+- Database fishing tool
+- Apex SQL Studio
+- SQuirreL SQL
+
 ## How to export databases
 
 ## Migrations in Postgres
