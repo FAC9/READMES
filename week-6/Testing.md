@@ -24,23 +24,7 @@ To integrate this approach in a real testing framework, you would perform the fo
 
 Many testing frameworks allow beforeEach and AfterEach as a testing method, so steps **1** and **4** would be performed before and after each test.
 
-We all love Tape, but does it have before each and after each methods? No.
-But [redtape](https://www.npmjs.com/package/redtape) does. It is built on tape testing framework, so essentially you can perform the following;
-
-```javascript
-var redtape = require('redtape'),
-    fs = require('fs');
-
-var test = redtape({
-  beforeEach: function (cb) {
-    // CREATE VIRTUAL TABLE
-  },
-  // DO SOME TABLE STUFF. TEST IT
-  afterEach: function (cb) {
-    // DROP VIRTUAL TABLE
-  }
-});
-```
+Check out [redtape](https://github.com/eugeneware/redtape) for examples on how to use a tape like testing environment with before each and after each methods.
 
 ## Research and figure out how to use a mocking library.
 ## What are some advantages and disadvantages of mocking?
