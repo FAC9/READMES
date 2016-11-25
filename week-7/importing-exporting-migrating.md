@@ -6,11 +6,41 @@
 
 ## Migrations in Postgres
 
+### What is a database schema?
+
+A database schema defines how a database is structured – the tables that exist and their names, how those tables are configured, the fields that those tables contain, and the data format for those fields. A schema describes how real-world (or conceptual) entities are modeled by the database.
+
+The schema doesn’t contain any data in itself. It is simply a description of how data added to a database must be structured.
+
+If you start working on a project with an existing database, the first thing you should do is ask for a schema diagram. The diagram will show all of the tables in the database and the foreign keys they use to relate. It should look like this:
+
+![schema-image](http://www.codeproject.com/KB/database/UnitTestDbAppsWithNDbUnit/NDbUnitXPath.jpg)
+
+
+### What is migration?
+
+Migration is the processing of transferring data from one schema to another. (It may also refer to the process of moving data between two different databases with the same schema, although this tends to be a simpler task - just export from one then import into the other.)
+
+### When might you need to migrate a database?
+
+As a company expands or develops, the real-world or conceptual entities it deals with may change or become more complicated. When this happens, you might need to update your database schema to reflect the changes in the real-world entities that you're dealing with – but all of the data created under the old schema will need to be ‘migrated’ into the new format in order to preserve your previous records. See _Example: cat lovers database_ below.
+
+### The steps of migrating a database
+
+There are many approaches to database migration. One of the most commonly used patterns is __ETL (export, transform, load)__, although others exist.
+
+To migrate data using the ETL pattern, you would first __identify which tables are affected by the migration__. Databases can be huge, so you only want to be working with the data that is specifically affected by the change of schema.
+
+Making changes directly into a live database is a _very bad idea_ – a single typo or poorly written query can destroy millions of records. So when you’ve selected the affected data, you should __export__ it to a safe area, separate from your live data.
+
+When you’ve exported your data, you then need to __transform__ the data from the old schema into the new schema. This should be done using scripts – firstly because this reduces the possibility of human error, and secondly because the transformation can then be applied to your databases in other environments (for example, your production, test and development environments). See _Example: cat lovers database_ for an example script.
+
+When the data has been transformed and validated, you can then __load__ the transformed data back into the database.    
+
 ### Things to consider
 
-- You have a live site with live users, and ideally you want to avoid downtime
-- User data is very sensitive and not to be messed with
-
+- If you have a live site with live users, ideally you want to avoid downtime.
+- User data is very sensitive and not to be messed with.
 
 ### Example: cat lovers database
 
