@@ -7,4 +7,5 @@
 ## Migrations in Postgres
 
 ## Resources
-- Put links here
+- https://www.postgresql.org/docs/9.1/static/backup-dump.html
+- https://www.postgresql.org/docs/8.1/static/app-pgdump.html
