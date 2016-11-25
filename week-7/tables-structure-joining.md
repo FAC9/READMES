@@ -8,7 +8,7 @@
 
 ## Differences between inner / outer joins
 
-This difference between inner and outer joins is commonly demonstrated using ~buttocks~ Venn Diagrams.
+This difference between inner and outer joins is commonly demonstrated using ~~buttocks~~ Venn Diagrams.
 Why buck years of tradition?
 
 
