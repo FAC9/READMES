@@ -235,8 +235,12 @@ This diagram may be initally confusing as rows in the diagram correspond to colu
 
 ## Resources
 
-- [A Visual Explanation of SQL Joins](https://blog.codinghorror.com/a-visual-explanation-of-sql-joins/)
-- [PostgreSQL Tutorial](http://www.postgresqltutorial.com/), section 4
-Normalisation resources:
+Normalisation resources:  
 - http://www.studytonight.com/dbms/database-normalization.php,
 - http://agiledata.org/essays/dataNormalization.html
+
+Table joining resources:  
+- [A Visual Explanation of SQL Joins](https://blog.codinghorror.com/a-visual-explanation-of-sql-joins/)
+- [PostgreSQL Tutorial](http://www.postgresqltutorial.com/), section 4
+
+
