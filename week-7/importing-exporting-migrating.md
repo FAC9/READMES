@@ -47,20 +47,19 @@ We'll write some SQL for that:
 
 ```
 INSERT INTO cats (name, color, catLoverId) VALUES
-  SELECT cat_name, cat_color, id FROM catLovers
+  SELECT cat_name, cat_color, id FROM catLovers;
 ```
-- Now all our data is in one place but we've got some extra columns left in our cat_lovers table which we don't really need any more. In practice, these columns aren't causing us any problems, so we'll leave them in place for an interim period so that we can be 500% sure that none of our data has been lost in migration.
-- Later on, we might want to delete the old data for good. After all, some of those cats might have changed colour by now. We can do this with SQL:
+- Now all our data is in one place but we've got some extra columns left in our cat_lovers table which we don't really need any more. In practice, these columns aren't causing us any problems, so we'll leave them in place for an interim period so that we can be 500% sure that none of our data has got lost in migration.
+- Later on, we might want to delete the old data for good. After all, some of those cats might have changed colour by now and we wouldn't want to be storing inaccurate data. We can do this with SQL:
 
 ```
 ALTER TABLE cat_lovers
-  DROP COLUMN (cat_name, cat_color)
+  DROP COLUMN (cat_name, cat_color);
 ```
 
 - Our lovely two-columned database now looks more like this:
 
 ![image_2](./images/Database_schema2.png)
-
 😻
 
 ## Resources
