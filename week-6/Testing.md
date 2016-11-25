@@ -41,7 +41,6 @@ test('checks results', function() {
 })
 ```
 
-## Research and figure out how to use a mocking library.
 ## What are some advantages and disadvantages of mocking?
 ### Advantages of mocking
 - using mock objects and data can be a good way to unit-test, but integration testing is needed to ensure that the system runs as a whole
@@ -54,10 +53,10 @@ test('checks results', function() {
 - there are security and privacy implications to mock databases
 - once the db gets big, taking a copy of it and putting it into your dev environment can be a big deal
 
-## What exactly needs testing about the database?
-- Test if any errors are shown while executing queries
-- Data Integrity is maintained while creating, updating or deleting data in database
-- Check response time of queries and fine tune them if necessary
-- Test data retrieved from your database is shown accurately in your web application
-
-  Find out more: http://www.guru99.com/web-application-testing.html
+## Resources
+- [An overview of database testing](http://www.softwaretestinghelp.com/database-testing-process/)
+- [Strategies for unit-testing database-driven applications](http://stackoverflow.com/questions/145131/whats-the-best-strategy-for-unit-testing-database-driven-applications)
+- [Testing: when to connect the database](http://softwareengineering.stackexchange.com/questions/206539/unit-tests-and-databases-at-which-point-do-i-actually-connect-to-the-database)
+- [Wikipedia entry on mock objects](https://en.wikipedia.org/wiki/Mock_object)
+- [Martin Fowler on classical testing vs mocking](http://martinfowler.com/articles/mocksArentStubs.html)
+- [Node Postgres Test](https://www.npmjs.com/package/pgtest)
