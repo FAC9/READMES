@@ -53,6 +53,12 @@ test('checks results', function() {
 - there are security and privacy implications to mock databases
 - once the db gets big, taking a copy of it and putting it into your dev environment can be a big deal
 
+## What exactly needs testing about the database?
+ - Test if any errors are shown while executing queries
+ - Data Integrity is maintained while creating, updating or deleting data in database
+ - Check response time of queries and fine tune them if necessary
+ - Test data retrieved from your database is shown accurately in your web application
+ 
 ## Resources
 - [An overview of database testing](http://www.softwaretestinghelp.com/database-testing-process/)
 - [Strategies for unit-testing database-driven applications](http://stackoverflow.com/questions/145131/whats-the-best-strategy-for-unit-testing-database-driven-applications)
