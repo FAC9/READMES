@@ -12,17 +12,19 @@
 - User data is very sensitive and not to be messed with
 
 
-### Example: cat lovers database
+### Example: cat lovers database 🐱 
 
 In our example, we have a really basic database with just one table. It stores a list of cat lovers and the names of their cats. This works OK for the organisation updating the cat lovers database for a few years, until some of the members start adopting new cats. The single-table database structure just isn't sufficient any more.
 
 It's time to scale.
 
+🐈🐈 🐈 🐈🐈🐈
+
 See below a visual representation of the cat lovers table, and then the schema for the new version of the database, to which we've added a new table and a few extra columns:
 
 ![image-1](./images/Database_schema1.png)
 
-Even though our project is a very small one, getting from catLovers-database-1.0 to the proposed schema would include a few steps. And of course it's important that none of the users' data goes missing or gets accidentally changed in the process.
+Even though our project is a very small one, getting from catLovers-database-1.0 to the proposed schema would include a few steps. And of course it's important that none of the users' data goes missing or gets accidentally changed in the process 🙀.
 
 We might do something like this:
 
@@ -48,7 +50,7 @@ ALTER TABLE cat_lovers
 
 ![image_2](./images/Database_schema2.png)
 
-
+😻
 
 ## Resources
 
