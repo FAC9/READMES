@@ -42,7 +42,8 @@ Input validation can be set by rules in the `response` property of the `config` 
 
 - Resources:
   * [Egghead tutorial](https://egghead.io/lessons/node-js-hapi-js-request-validation-with-joi)
-  * [Hapi-Joi turorial](https://github.com/hapijs/joi)
+  * [Hapi-Joi repo](https://github.com/hapijs/joi)
+  * [Hapi-Joi tutorial](http://hapijs.com/tutorials/validation?lang=en_US)
 
 
 ### Create a small project demonstrating some example situations where you'd use Joi.
