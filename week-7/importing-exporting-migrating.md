@@ -20,7 +20,7 @@ It's time to scale.
 
 See below a visual representation of the cat lovers table, and then the schema for the new database:
 
-![image-1](./Database_schema1.png)
+![image-1](./images/Database_schema1.png)
 
 Getting from catLovers database 1.0 to the proposed version would include a few steps. And of course it's important that none of the users' data goes missing or gets changed in the process.
 
@@ -46,7 +46,7 @@ ALTER TABLE cat_lovers
 
 - Our lovely two-columned database now looks more like this:
 
-![image_2](./Database_schema2.png)
+![image_2](./images/Database_schema2.png)
 
 
 
