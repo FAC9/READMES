@@ -18,11 +18,11 @@ In our example, we have a really basic database with just one table. It stores a
 
 It's time to scale.
 
-See below a visual representation of the cat lovers table, and then the schema for the new database:
+See below a visual representation of the cat lovers table, and then the schema for the new version of the database, to which we've added a new table and a few extra columns:
 
 ![image-1](./images/Database_schema1.png)
 
-Getting from catLovers database 1.0 to the proposed version would include a few steps. And of course it's important that none of the users' data goes missing or gets changed in the process.
+Even though our project is a very small one, getting from catLovers-database-1.0 to the proposed schema would include a few steps. And of course it's important that none of the users' data goes missing or gets accidentally changed in the process.
 
 We might do something like this:
 
@@ -36,8 +36,8 @@ We'll write some SQL for that:
 INSERT INTO cats (name, color, catLoverId) VALUES
   SELECT cat_name, cat_color, id FROM catLovers
 ```
-- Now all your data is in one place, but you've got some extra columns left in your cat_lovers table which you don't really need any more. In practice, these columns aren't causing you any problems, so you might want to leave them in place for an interim period so that you can be 500% sure that none of your data has been lost in migration.
-- Later on, we might want to delete the old data for good. After all, some of those cats might have changed color by now. We can do this with SQL:
+- Now all our data is in one place but we've got some extra columns left in our cat_lovers table which we don't really need any more. In practice, these columns aren't causing us any problems, so we'll leave them in place for an interim period so that we can be 500% sure that none of our data has been lost in migration.
+- Later on, we might want to delete the old data for good. After all, some of those cats might have changed colour by now. We can do this with SQL:
 
 ```
 ALTER TABLE cat_lovers
@@ -50,22 +50,11 @@ ALTER TABLE cat_lovers
 
 
 
-
-
-
 ## Resources
 
-- Put links here
+This [post on StackOverflow](http://dba.stackexchange.com/questions/10913/best-practices-for-schema-changes-and-data-migrations-to-a-live-database-without) informed the cats example and talks about how to minimize impact of database migrations
 
-This [post on StackOverflow](http://dba.stackexchange.com/questions/10913/best-practices-for-schema-changes-and-data-migrations-to-a-live-database-without) talks about how to minimize impact of database migrations and is fairly easy to understand:
-
-Emily links
-- http://blog.honeybadger.io/zero-downtime-migrations-of-large-databases-using-rails-postgres-and-redis/
-- https://github.com/theoephraim/node-pg-migrate
-- https://devcenter.heroku.com/articles/heroku-postgres-import-export
-- https://kostasbariotis.com/data-migration-with-nodejs/ <<== best one so far!
-- https://www.wlaurance.com/2014/04/Using-PostgreSQL-and-Node/ <<== also seems nice
-- http://dba.stackexchange.com/questions/10913/best-practices-for-schema-changes-and-data-migrations-to-a-live-database-without
+Here's an [article](https://kostasbariotis.com/data-migration-with-nodejs/) that talks about migration in a node.js context
 
 Steve links
 - https://www.postgresql.org/docs/9.1/static/backup-dump.html
