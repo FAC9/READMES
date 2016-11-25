@@ -13,3 +13,12 @@
 - once the db gets big, taking a copy of it and putting it into your dev environment can be a big deal
 
 ## What exactly needs testing about the database?
+
+
+## Resources
+- [An overview of database testing](http://www.softwaretestinghelp.com/database-testing-process/)
+- [Strategies for unit-testing database-driven applications](http://stackoverflow.com/questions/145131/whats-the-best-strategy-for-unit-testing-database-driven-applications)
+- [Testing: when to connect the database](http://softwareengineering.stackexchange.com/questions/206539/unit-tests-and-databases-at-which-point-do-i-actually-connect-to-the-database)
+- [Wikipedia entry on mock objects](https://en.wikipedia.org/wiki/Mock_object)
+- [Martin Fowler on classical testing vs mocking](http://martinfowler.com/articles/mocksArentStubs.html)
+- [Node Postgres Test](https://www.npmjs.com/package/pgtest)
