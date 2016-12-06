@@ -115,4 +115,3 @@ http://security.stackexchange.com/questions/36833/why-should-i-hash-passwords
 http://security.stackexchange.com/questions/66989/how-does-a-random-salt-work
 http://security.stackexchange.com/questions/211/how-to-securely-hash-passwords/31846#31846
 https://crackstation.net/hashing-security.htm
->>>>>>> origin
