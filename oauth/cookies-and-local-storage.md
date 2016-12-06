@@ -64,7 +64,7 @@ Local storage:
 [Getting started with localStorage vs sessionStorage in html5](http://javascript.tutorialhorizon.com/2015/09/08/getting-started-with-localstorage-vs-sessionstorage-in-html5/)
 [Knowing when to use each type](https://github.com/FAC9/READMES/blob/master/hapi/cache-and-cookies.md#when-to-use-sessionstorage)
 # If using Local Storage to store your users access_token, how do you transport the token to and from your server?
-  Local storage allows you to save simple key value pairs on the client machine. This is a good way to improve your sites performance, and to minimise the number of requetss that are made to your server. We can save our access tokens in local storage.
+  Local storage allows you to save simple key value pairs on the client machine. This is a good way to improve your sites performance, and to minimise the number of requests that are made to your server. We can save our access tokens in local storage.
 
   Because local storage is only accessible through client side Javascript, it poses some problems if we choose to store access tokens in it. Unlike cookies, which can be sent along with a the clients inital request, to use our locally stored access tokens
 
