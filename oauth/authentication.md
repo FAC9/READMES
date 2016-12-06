@@ -5,7 +5,7 @@
 - Also known as 2FA and TFA
 
 - It is a type of 'multi factor authentication' that requires not only a password and username but
-also something that only, and only, that user has on them. An example of this would be google's 2FA process
+also something that the user, and only that user, has on them. An example of this would be google's 2FA process
 for user login where they send you a code via SMS.
 
 ![Google 2FA](./images/Google2FA.png "Google 2FA")
