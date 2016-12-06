@@ -24,10 +24,10 @@ GitHub supports two-stage authentication to login to your account.
 ![app or sms](./images/2_app_or_sms.png)
 
 3. Download an authentication app. Interestingly the apps are all third party apps and not provided by GitHub.
-![download](./images/3_download_auth_app.png)
+![download](./images/3_download_auth_app_small.png)
 
 4. Once set up, every time you open the application it provides you with a authentication code (TOTP).
-![TOTP](./images/4_TOTP.png)
+![TOTP](./images/4_TOTP_small.png)
 
 5. After you insert your username and password you will be asked for the authentication code.
 ![Authentication Code](./images/5_login_with_code.png)
