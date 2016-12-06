@@ -71,7 +71,7 @@ It can contain reserved, public and private claims (i.e. statements about differ
 {
   // reserved claim for the issuer of the token
   "iss": "scotch.io",
-  // Registered claim - expiration in NumericDate value.
+  // reserved claim - expiration in NumericDate value.
   // The expiration MUST be after the current date/time.
   "exp": 1300819380,
   // public claim
