@@ -39,7 +39,6 @@ All the of steps to set up two-stage authentication can be found [here](https://
 Finally - with node modules like [speakeasy](https://github.com/speakeasyjs/speakeasy) you can use two-stage authentication on your
 projects with Google Authenticator!
 
-# What are the benefits of oAuth?
 # How do you write tests for an Authenticated endpoint?
 
 # How and why we hash passwords
