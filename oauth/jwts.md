@@ -99,10 +99,91 @@ The snippet above generates the third part of the JWT, which is the signature he
 Combining all three parts above, the JWT looks like this:
 `eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzY290Y2guaW8iLCJleHAiOjEzMDA4MTkzODAsIm5hbWUiOiJDaHJpcyBTZXZpbGxlamEiLCJhZG1pbiI6dHJ1ZX0.03f329983b86f7d9a9f5fef85305880101d5e302afafa20154d094b229f75773
 `
+# How do you decode a JWT?    
+```javascript
+const jwt = require('json-web-token');
+var secret = process.env.JWT_SECRET;
 
-# How do you decode a JWT?
-# How do you use the module `hapi-auth-jwt2`?
+    jwt.decode(secret, token, function (err, decodedJWT) {
+      if (err) {
+        return console.log(err, 'There was an error decoding');
+      } else {
+        console.log(decodedJWT);
+      }
+    });
 
+    <!-- token is the JWT you are trying to decode -->
+```
+
+[Check out this cool resource](http://calebb.net/)  to see what a decoded JWT looks like before and after.
+
+To see the full example this code snippet came from, [look here.](https://www.npmjs.com/package/json-web-token)
+
+# How do you use the module `hapi-auth-jwt2`?   
+`hapi-auth-jwt2` is the authentication scheme for Hapi.js apps using JWTs.
+
+For a full walk-through [see DWYL's excellent README](https://github.com/dwyl/hapi-auth-jwt2).
+
+```javascript
+var people = { // our "users database"
+    1: {
+      id: 1,
+      name: 'Jen Spencer'
+    }
+};
+
+// Our own validation function
+var validate = function (decoded, request, callback) {
+
+    // do your checks to see if the person is valid
+    if (!people[decoded.id]) {
+      return callback(null, false);
+    }
+    else {
+      return callback(null, true);
+    }
+};
+
+var server = new Hapi.Server();
+server.connection({ port: 8000 });
+  // ** INCLUDE MODULE HERE ↓↓ **
+server.register(require('hapi-auth-jwt2'), (err) => {
+  if(err){ console.log(err);
+  }
+
+  server.auth.strategy('jwt', 'jwt',
+    { key: process.env.JWT_SECRET,         
+      validateFunc: validate,            // validate function defined above
+      verifyOptions: { algorithms: [ 'HS256' ] } // pick a strong algorithm
+    });
+
+    server.auth.default('jwt');
+
+    server.route([
+      {
+        method: "GET",
+        path: "/",
+        config: { auth: false },
+        handler: function(request, reply) {
+          reply({text: 'Token not required'});
+        }
+      },
+      {
+        method: 'GET',
+        path: '/restricted',
+        config:{ auth: 'jwt' },
+        handler: function(request, reply){
+          reply({text: 'You used a Token!'})
+          .header("Authorization", request.headers.authorization);
+        }
+      }
+    ]);
+});
+
+server.start(function () {
+  console.log('Server running at:', server.info.uri);
+});
+```
 
 ### Resources
 - [Medium article on jwt](https://medium.com/vandium-software/5-easy-steps-to-understanding-json-web-tokens-jwt-1164c0adfcec#.fl1xahvou)
