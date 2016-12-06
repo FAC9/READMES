@@ -9,7 +9,7 @@
 header.payload.signature
 ```
 ## How and why JWTs are used
-![jwt explained](./images/jwt.png)
+![jwt explained](./jwts-images/jwt.png)
 
 ## JWTs - common characteristics
 
