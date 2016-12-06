@@ -21,6 +21,6 @@ Local storage:
   - Server recieves this request with token, and then makes a request to the OAuth provider
   - OAuth provider Recieve's the token, then sends request information to our server
   - Server recieves this information, then repackages it and sends it to the client
-  - The client interprets the data and update the page accordingly.
+  - The client interprets the data and updates the page accordingly.
   
   This process is much more involved than using cookies, and is somewhat clumsy... There may be situations where this is better. For example in a one page app we may want to show something, anything, to the client AS SOON AS POSSIBLE. If we use this method we can immediately show them a blank page with no data, and then update it as soon as possible... :)
