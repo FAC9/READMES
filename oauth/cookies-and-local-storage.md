@@ -1,5 +1,5 @@
 # What are cookies, how do you create, transport, access and expire them?
-  Cookies are a way of storing certain informaton about a users session on the client machine.
+  Cookies are a way of storing certain information about a users session on the client machine.
   They can be set in various ways, depending on the way your server is set up, and will be automatically be returned by the client on future requests.
   Cookies can be set to expire at a certain date.
 
