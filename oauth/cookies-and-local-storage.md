@@ -1,5 +1,30 @@
 # What are cookies, how do you create, transport, access and expire them?
+  Cookies are a way of storing certain informaton about a users session on the client machine.
+  They can be set in various ways, depending on the way your server is set up, and will be automatically be returned by the client on future requests.
+  Cookies can be set to expire at a certain date.
+
 # What do you need to do in Hapi to set a cookie?
+  We can simply set state when we reply 
+  
+```
+      //set the server's cookie details
+      
+      server.state('nameCookie', {
+      ttl: 360000,
+      isSecure: false,
+      isHttpOnly: false,
+      encoding: 'base64json',
+      clearInvalid: false,
+      strictHeader: true,
+      path: "/"
+    });
+
+      //call .state method on reply to set a cookie
+      
+     reply.file('./public/views/index.html').state('nameCookie', {name: cookieName})
+```
+
+
 # How do you get a cookie from a request in Hapi?
 
 # Briefly describe Local Storage and Session Storage (browser api)?
