@@ -26,7 +26,9 @@
 
 
 # How do you get a cookie from a request in Hapi?
-
+  
+  We can access the cookie using request.state.nameCookie (where nameCookie could be whatever the cookie's name is) in our handler function.
+  
 # Briefly describe Local Storage and Session Storage (browser api)?
 "The Web Storage API provides mechanisms by which browsers can store key/value pairs, in a much more intuitive fashion than using cookies."
 
