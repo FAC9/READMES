@@ -1,9 +1,9 @@
 # What are Authorisation Scopes?
 
-__ Authorization __
+__Authorization__
 - Authorization is the process of giving someone permission to do or have something.
 
-__ Authorization scopes __
+__Authorization scopes__
 - A scope is a specific string that indicates a list of permissions
 - If you are an app, they let your specify what type of access you need
 - If you are a user, they determine what data you give the app permission to access
