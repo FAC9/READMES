@@ -10,4 +10,19 @@ Session storage:
 Local storage:
 - storage that persists until explicitly deleted, even when the browser is closed and reopened
 
+[Getting started with localStorage vs sessionStorage in html5](http://javascript.tutorialhorizon.com/2015/09/08/getting-started-with-localstorage-vs-sessionstorage-in-html5/)
+[Knowing when to use each type](https://github.com/FAC9/READMES/blob/master/hapi/cache-and-cookies.md#when-to-use-sessionstorage)
 # If using Local Storage to store your users access_token, how do you transport the token to and from your server?
+  Local storage allows you to save simple key value pairs on the client machine. This is a good way to improve your sites performance, and to minimise the number of requetss that are made to your server. We can save our access tokens in local storage.
+  
+  Because local storage is only accessible through client side Javascript, it poses some problems if we choose to store access tokens in it. Unlike cookies, which can be sent along with a the clients inital request, to use our locally stored access tokens
+  
+  - client must request page from server
+  - client recieves and loads page
+  - client accesses token from local storage, then make another request to server including this token
+  - Server recieves this request with token, and then makes a request to the OAuth provider
+  - OAuth provider Recieve's the token, then sends request information to our server
+  - Server recieves this information, then repackages it and sends it to the client
+  - The client interprets the data and updates the page accordingly.
+  
+  This process is much more involved than using cookies, and is somewhat clumsy... There may be situations where this is better. For example in a one page app we may want to show something, anything, to the client AS SOON AS POSSIBLE. If we use this method we can immediately show them a blank page with no data, and then update it as soon as possible... :)
