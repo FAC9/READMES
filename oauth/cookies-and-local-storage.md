@@ -11,4 +11,5 @@ Local storage:
 - storage that persists until explicitly deleted, even when the browser is closed and reopened
 
 [Getting started with localStorage vs sessionStorage in html5](http://javascript.tutorialhorizon.com/2015/09/08/getting-started-with-localstorage-vs-sessionstorage-in-html5/)
+[Knowing when to use each type](https://github.com/FAC9/READMES/blob/master/hapi/cache-and-cookies.md#when-to-use-sessionstorage)
 # If using Local Storage to store your users access_token, how do you transport the token to and from your server?
