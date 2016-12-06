@@ -115,7 +115,7 @@ var secret = process.env.JWT_SECRET;
     <!-- token is the JWT you are trying to decode -->
 ```
 
-[Check out this cool resource](http://calebb.net/)  to see what a decoded JWT looks like before and after.
+[Check out this cool resource](https://www.jsonwebtoken.io/)  to see what a decoded JWT looks like before and after.
 
 To see the full example this code snippet came from, [look here.](https://www.npmjs.com/package/json-web-token)
 
