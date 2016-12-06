@@ -1,4 +1,4 @@
-# What are Authorisation Scopes?
+## What are Authorisation Scopes?
 
 __Authorization__
 - Authorization is the process of giving someone permission to do or have something.
@@ -12,10 +12,32 @@ __Authorization scopes__
 - An example list of authorization scopes for a social network:  
 `post_to_my_wall  send_notification  post_to_my_friends_wall  read_my_age`
 
-# How do you  use scopes in Hapi?
+## How do you  use scopes in Hapi?
+To demonstrate how to set up scopes in Hapi, we copied and adapted some code from stack overflow that allows us to demonstrate a login with two different scopes, one for an admin user and one for a regular user.
 
+### The process involves
+- Define the scopes that you're going to need
+- Configure authentication to allow access to users by credentials (eg admin, not admin)
+- Configure routes using ```config.auth.scope```
 
-# How does the Github API use scopes?
+```
+server.route({
+    method: 'GET',
+    path: '/something/adminy',
+    config: {
+        handler: function (request, reply) {
+            return reply('Hello there, admin.');
+        },
+        auth: {
+            scope: 'admin'
+        }
+    }
+})
+```
+
+To see an example of this code, [click here](https://github.com/msachi/hapi-scope-example)
+
+## How does the Github API use scopes?
 
 To demonstrate how to define scope when authorising with GitHub, we've recycled one of our projects from Monday.
 
