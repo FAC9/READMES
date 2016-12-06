@@ -17,13 +17,13 @@ __Authorization scopes__
 
 # How does the Github API use scopes?
 
-To demonstrate how to define scope when authentication with GitHub, we've recycled one of our projects from Monday.
+To demonstrate how to define scope when authorising with GitHub, we've recycled one of our projects from Monday.
 
-You can see the new forked version here:
+You can see the new forked version here: https://github.com/shireenzoaby/oauth-workshop
 
-(note that to run the application on your machine, you'll need the config.env file)
+(note that to run the application on your machine, you'll need a registered GitHub app and a config.env file)
 
-In the server.js file of our project are the different end points. On the /login path, the user is required to authenticate their GitHub account. We do so like this:
+The end points for our project are set up in the server.js file in the root. On the /login route, the user is required to authenticate their GitHub account. The code for that looks like this:
 
 ```js
 {
@@ -38,11 +38,13 @@ In the server.js file of our project are the different end points. On the /login
   }
 }
 ```
-Now our user is authenticated, but by default GitHub grants only limited access. The default (no-scope) grants read-only access to public information (includes public user profile info, public repository info, and gists). This means that the user won't be able to do much with the app. Yet.
+Now our user is authenticated. The default (no-scope) grants read-only access to public information. This means that the user won't be able to do much with our app. Yet.
 
-In order to get access to the user's repos, we have to specify what access rights we need as a query parameter in our Get request to GitHub.
+What we actually want to do is allow the user to create issues for a GitHub issue via our app. This would require additional permissions from GitHub.
 
-That would look like this:
+In the query parameters of our 'GET' request, we can specify the permissions we would need.
+
+This is where scope comes in, and it would look like this:
 
 ```js
 {
@@ -52,14 +54,14 @@ That would look like this:
     var queryString = querystring.stringify({
       client_id: process.env.CLIENT_ID,
       redirect_uri: process.env.BASE_URL + '/welcome',
-      scope: 'user public_repo admin:org	'
+      scope: 'user public_repo admin:org	' // <-- this is it!
     });
     reply.redirect('https://github.com/login/oauth/authorize?' + queryString);
   }
 }
 ```
-If we go back to our application's login route, GitHub will recognise that our app is now asking for more permissions than the default. This requires additional authentication from the user.
+If we go back to our application's login route, GitHub will recognise that our app is now asking for more permissions than the default. The user will be informed of the changes, and will need to authorise access to more information.
 
-When the user authenticates again, our app will be able to post to public repos on their behalf.
+When the user confirms again, our app will be able to post to public repos on their behalf.
 
 Read the full docs on scope in GitHub apps here: https://developer.github.com/v3/oauth/#scopes
