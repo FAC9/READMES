@@ -32,6 +32,17 @@ Remote testing is the most efficient because it can be implemented throughout th
 Pro: budget
 Con: the user’s thought process when using a product or service – might not come through as much as when using in-person methods.
 
+
+### Hallway Usability Testing:
+“A hallway usability test is where you grab the next person that passes by in the hallway and force them to try to use the code you just wrote. If you do this to five people, you will learn 95 percent of what there is to learn about usability problems in your code.” 
+
+Of course you don’t need to literally grab people from the hallway, but the idea is that any small number of random users (from within your target audience) will give you a sufficient amount of data for your usability goals.
+
+The test itself doesn’t have to be that complex. Corinna Baldauf, Web Developer and UX Blogger, suggests setting up a station with your product in a public venue — she used an office break room, while others suggest Starbucks. When someone comes by, ask them to test the system, perhaps even adding some incentive (don’t underestimate the power of chocolate). Give them instructions, then step back and watch. Don’t forget to take notes, particularly on what is not going as expected
+
+
+
+
 ### Beta-testing:
 
 Beta testing is helpful if you:
