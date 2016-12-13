@@ -1,3 +1,6 @@
+# Why use wireframes and prototypes?
+![](https://files.gitter.im/tbtommyb/NJX9/swing_comic.png)
+
 # What is a wireframe
 
 A wireframe is a very simple mock up of a website, it is a visual guide of a skeletal frame of a website.
@@ -59,14 +62,15 @@ With a prototype you should be able to move through the website's user stories a
 
 There are a collection of app prototypes [here](https://www.justinmind.com/examples). Note how they look similar to a complete app and how you can move through the different sections of the projects.
 
-### Low-fidelity
+### Final thought
+So what is a prototype? 
+It’s a simulation of the final product. It’s like an interactive mockup that can have any degree of fidelity. The main purpose of building prototypes is to test whether or not the flow of the product is smooth and consistent.
 
-Designers in companies such as Nintendo use low-fidelity prototyping. Designer Kazuyuki Motoyama explains that the only way to actually know what a Miiverse would feel like was to hold it. That’s when he built this prototype out of cardboard.
+Designer Kazuyuki Motoyama explains that the only way to actually know what a Miiverse would feel like was to hold it. That’s when he built this prototype out of cardboard.
 
 ![nintendo image](prototype-images/nintendo.jpg)
-
-So what is a prototype? The answer: it’s a simulation of the final product. It’s like an interactive mockup that can have any degree of fidelity. The main purpose of building prototypes is to test whether or not the flow of the product is smooth and consistent.
 
 ## Resources
 
 http://alistapart.com/article/sketchingincode
+https://blog.prototypr.io/the-7-best-prototyping-tools-for-ui-and-ux-designers-in-2016-701263ae65e8#.ae86b1bel
