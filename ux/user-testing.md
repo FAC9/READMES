@@ -36,13 +36,10 @@ Con: the user’s thought process when using a product or service – might not 
 
 Beta testing is helpful if you:
 
-Already built a feature and want to ship it to a subset of your users to gather feedback, questions and bugs from different sources and personas.
-
-Have a specific question you want to answer about a live feature in order to make informed changes.
-
-Want to have many people using it immediately.
-
-Want to track usage and adoption rates in a subset of your whole customer base.
+- Already built a feature and want to ship it to a subset of your users to gather feedback, questions and bugs from different sources and personas.
+- Have a specific question you want to answer about a live feature in order to make informed changes.
+- Want to have many people using it immediately.
+- Want to track usage and adoption rates in a subset of your whole customer base.
 
 ### User Diaries:
 
@@ -50,3 +47,11 @@ Involve real users when testing. No amount of tools or test cases can substitute
 
 Ultimately, they more likely to catch the key usability issues.
 
+
+##General tip for user testing:
+
+- Know When To Test & What To Test.
+- Ask the Right Questions.
+- Consider Test Length.
+- Avoid Unnatural Test Flows.
+- Identify Problems and Hypothesize Fixes.
