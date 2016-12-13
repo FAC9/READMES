@@ -34,4 +34,39 @@ High Fidelity Wireframes can be more persuasive for clients and stakeholders, as
 [Online Wireframe Builder](https://wireframe.cc/)  
 [Balsamiq](www.balsamiq.com/)  
 
-# What is a prototype
+# Prototyping
+
+It’s easier to use an eraser on the drafting board, than a sledgehammer at the construction site.
+– Frank Lloyd Wright
+
+Have you ever overspent resources in a rush or accomplished too little for being a perfectionist? Low-fidelity prototyping helps us to find the middle ground between overspending and overthinking, between too little investment and too much user validation. By building a practical, preliminary version of your product, you will catch potential problems and promising insights faster and earlier in the process.
+
+![run through](prototype-images/run-through.jpg)
+
+Prototyping is the stage after wireframing. It's meant to be a near-accurate, interactive representation of the final website. It represents enough of the appearance and function of the product that it can be used for user research.
+
+It should allow the user to:
+
+* experience content and interactions with the interface
+
+*  test the main interactions in a way similar to the final site
+
+A mockup can show you what it will look like, a prototype will show you how it will behave.
+
+A prototype gives you the ability to test a product through interaction in a way that a mockup can't. Prototypes have a high degree of interactivity.
+
+With a prototype you should be able to move through the website's user stories and check how well things flow. The intention is to get a good idea of how the actual website will work in practice. Unlike wireframes, the prototype should look pretty like the end result, although you don't need to link up things like backend code.
+
+There are a collection of app prototypes [here](https://www.justinmind.com/examples). Note how they look similar to a complete app and how you can move through the different sections of the projects.
+
+### Low-fidelity
+
+Designers in companies such as Nintendo use low-fidelity prototyping. Designer Kazuyuki Motoyama explains that the only way to actually know what a Miiverse would feel like was to hold it. That’s when he built this prototype out of cardboard.
+
+![nintendo image](prototype-images/nintendo.jpg)
+
+So what is a prototype? The answer: it’s a simulation of the final product. It’s like an interactive mockup that can have any degree of fidelity. The main purpose of building prototypes is to test whether or not the flow of the product is smooth and consistent.
+
+## Resources
+
+http://alistapart.com/article/sketchingincode
