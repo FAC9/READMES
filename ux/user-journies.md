@@ -2,14 +2,16 @@
 
 ## User Story
 
-This is a short, simple description of a feature told from the perspective of the person who desires the new capability, usually a user or customer of the system. It typically follows a simple template:
+This is a short, simple description of a feature told from the perspective of the person who desires the new capability, usually a user or customer of the system.
+User stories work well for the product **functionality**.
 
+It typically follows a simple template:
+
+```
 “**As a** ‘type of user’,
-
-**I want** ‘some goal’
-
-**so that** ‘some reason’.”
-
+ **I want** ‘some goal’
+ **so that** ‘some reason’.”
+```
 ![user_story](./images/user_story.jpg)
 
 ## User Journey
