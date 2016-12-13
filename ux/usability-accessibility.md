@@ -14,11 +14,11 @@ List of resources
 
 ### What is accessibility?
 
-The World Wide Web Consortium [10] defines web accessibility as an attribute through which “people with disabilities can perceive, understand, navigate, and interact with the web, and they can contribute to the web”.
+The World Wide Web Consortium defines web accessibility as an attribute through which “people with disabilities can perceive, understand, navigate, and interact with the web, and they can contribute to the web”.
 
 Web accessibility includes all types of disabilities that impact access to the web and thus includes visual, auditory, physical, speech, cognitive and neurological disabilities and adherence to web accessibility principles also benefits elderly users.
 
-So as to improve web site accessibility, the World Wide Web Consortium (W3C) has set up the Web Accessibility Initiative (WAI) which publishes the Web Content Accessibility Guidelines (WCAG) – a set of guidelines with the aim of making the web content more accessible to people with disabilities and indirectly to users in general ([11], [12]).
+So as to improve web site accessibility, the World Wide Web Consortium (W3C) has set up the Web Accessibility Initiative (WAI) which publishes the Web Content Accessibility Guidelines (WCAG) – a set of guidelines with the aim of making the web content more accessible to people with disabilities and indirectly to users in general.
 
 
 This might include:
