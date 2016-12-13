@@ -48,7 +48,7 @@ Involve real users when testing. No amount of tools or test cases can substitute
 Ultimately, they more likely to catch the key usability issues.
 
 
-##General tip for user testing:
+##General tips for user testing:
 
 - Know When To Test & What To Test.
 - Ask the Right Questions.
