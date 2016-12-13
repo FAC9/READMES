@@ -4,7 +4,7 @@
 
 [Your website should be so simple, a drunk person could use it.](http://theuserisdrunk.com/)
 
-![Image](usertesting.jpg)
+![Image](./images/usertesting.jpg)
 
 ## How?
 
