@@ -34,4 +34,23 @@ High Fidelity Wireframes can be more persuasive for clients and stakeholders, as
 [Online Wireframe Builder](https://wireframe.cc/)  
 [Balsamiq](www.balsamiq.com/)  
 
-# What is a prototype
+# Prototyping
+
+It’s easier to use an eraser on the drafting board, than a sledgehammer at the construction site.
+– Frank Lloyd Wright
+
+Prototyping is the stage after wireframing. It's meant to be a near-accurate, interactive representation of the final website.
+
+It should allow the user to:
+
+* experience content and interactions with the interface
+
+*  test the main interactions in a way similar to the final site
+
+With a prototype you should be able to move through the website's user stories and check how well things flow. The intention is to get a good idea of how the actual website will work in practice. Unlike wireframes, the prototype should look pretty like the end result, although you don't need to link up things like backend code.
+
+There are a collection of app prototypes [here](https://www.justinmind.com/examples). Note how they look similar to a complete app and how you can move through the different sections of the projects.
+
+## Resources
+
+http://alistapart.com/article/sketchingincode
