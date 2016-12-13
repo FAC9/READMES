@@ -39,9 +39,11 @@ High Fidelity Wireframes can be more persuasive for clients and stakeholders, as
 It’s easier to use an eraser on the drafting board, than a sledgehammer at the construction site.
 – Frank Lloyd Wright
 
-Have you ever overspent resources in a rush or accomplished too little for being a perfectionist? Low-fidelity prototyping helps us to find the middle ground between overspending and overthinking, between too little investment and too much user validation. By building a practical, preliminary version of your product, you will catch potential problems and promising insights faster and earlier in the process.
+By building a practical, preliminary version of your product, you will catch potential problems and promising insights faster and earlier in the process.
 
 ![run through](prototype-images/run-through.jpg)
+
+[The Playme prototype](https://www.justinmind.com/usernote/tests/4/1765/11588699/index.html#/screens/b107c292-d618-44ed-92b9-c0e4c8f26e0b)
 
 Prototyping is the stage after wireframing. It's meant to be a near-accurate, interactive representation of the final website. It represents enough of the appearance and function of the product that it can be used for user research.
 
