@@ -23,7 +23,7 @@ A user journey is a series of steps (typically 4-12) which represent a scenario 
 * Demonstrating the way users **currently** interact with the service / website / product
 * Demonstrating the way users **could** interact with the service / website / product
 
-![user_journey](./images/user_journey.jpg)
+![user_journey](./images/user_journey.png)
 
 ### How a User Story is Different from a User Journey
 
