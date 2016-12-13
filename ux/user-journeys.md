@@ -31,12 +31,6 @@ This does depend on the context of its usage but a User Story is based on a spec
 
 **Note: Based on context, a User Journey and Story can be one and the same.**
 
-### References
-1. [10 tips for writing good user stories](http://www.romanpichler.com/blog/10-tips-writing-good-user-stories/)
-2.  [User Stories – The Beginner's Guide](http://theuxreview.co.uk/user-stories-the-beginners-guide/)
-3. [User Journeys Beginner's Guide](http://theuxreview.co.uk/user-journeys-beginners-guide/)
-4. [UX The Difference between User Journey and User Story](http://www.i3lance.co.uk/2015/02/the-difference-between-storyboard-and-user-journey-and-user-story/)
-
 ## Jobs To Be Done (JTBD)
 
 ### What is JTBD?
@@ -60,3 +54,9 @@ This subtle shift moves attention away from demographic details, and instead pla
 Instead of approaching your design in terms of user journeys that address user stories, you would consider the _job_ journeys that would allow users to achieve each of the product's _job stories_.
 
 As JTBD is only interested in the 'why' and 'what' of a task, there is no need for personas (the 'who').
+
+## References
+1. [10 tips for writing good user stories](http://www.romanpichler.com/blog/10-tips-writing-good-user-stories/)
+2.  [User Stories – The Beginner's Guide](http://theuxreview.co.uk/user-stories-the-beginners-guide/)
+3. [User Journeys Beginner's Guide](http://theuxreview.co.uk/user-journeys-beginners-guide/)
+4. [UX The Difference between User Journey and User Story](http://www.i3lance.co.uk/2015/02/the-difference-between-storyboard-and-user-journey-and-user-story/)
