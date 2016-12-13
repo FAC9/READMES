@@ -10,7 +10,7 @@
 
 What type of user testing technique works best for you?
 
-### Focus groups:
+### Focus groups testing:
 
 User testing that allow you watch and interview real users while they interact with a product or service.
 
@@ -33,7 +33,7 @@ Pro: budget
 Con: the user’s thought process when using a product or service – might not come through as much as when using in-person methods.
 
 
-### Hallway Usability Testing:
+### Hallway Testing:
 “A hallway usability test is where you grab the next person that passes by in the hallway and force them to try to use the code you just wrote. If you do this to five people, you will learn 95 percent of what there is to learn about usability problems in your code.” 
 
 Of course you don’t need to literally grab people from the hallway, but the idea is that any small number of random users (from within your target audience) will give you a sufficient amount of data for your usability goals.
@@ -52,7 +52,7 @@ Beta testing is helpful if you:
 - Want to have many people using it immediately.
 - Want to track usage and adoption rates in a subset of your whole customer base.
 
-### User Diaries:
+### User Diaries testing:
 
 Involve real users when testing. No amount of tools or test cases can substitute for real life testing with real users.
 
