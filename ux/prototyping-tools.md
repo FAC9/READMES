@@ -39,7 +39,7 @@ High Fidelity Wireframes can be more persuasive for clients and stakeholders, as
 It’s easier to use an eraser on the drafting board, than a sledgehammer at the construction site.
 – Frank Lloyd Wright
 
-By building a practical, preliminary version of your product, you will catch potential problems and promising insights faster and earlier in the process.
+By building a practical, preliminary version of your product, you will catch potential problems and promising insights faster and earlier in the process. A prototype gives you the ability to test a product through interaction in a way that a mockup can't. 
 
 ![run through](prototype-images/run-through.jpg)
 
@@ -52,10 +52,6 @@ It should allow the user to:
 * experience content and interactions with the interface
 
 *  test the main interactions in a way similar to the final site
-
-A mockup can show you what it will look like, a prototype will show you how it will behave.
-
-A prototype gives you the ability to test a product through interaction in a way that a mockup can't. Prototypes have a high degree of interactivity.
 
 With a prototype you should be able to move through the website's user stories and check how well things flow. The intention is to get a good idea of how the actual website will work in practice. Unlike wireframes, the prototype should look pretty like the end result, although you don't need to link up things like backend code.
 
