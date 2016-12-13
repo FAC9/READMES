@@ -39,7 +39,7 @@ High Fidelity Wireframes can be more persuasive for clients and stakeholders, as
 It’s easier to use an eraser on the drafting board, than a sledgehammer at the construction site.
 – Frank Lloyd Wright
 
-![Prototype](prototype-image/Prototypes.png)
+![prototype](https://github.com/FAC9/READMES/blob/master/ux/images/Prototypes.png)
 
 By building a practical, preliminary version of your product, you will catch potential problems and promising insights faster and earlier in the process. A prototype gives you the ability to test a product through interaction in a way that a mockup can't. 
 
