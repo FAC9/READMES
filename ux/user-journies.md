@@ -28,10 +28,9 @@ This does depend on the context of its usage but a User Story is based on a spec
 **Note: Based on context, a User Journey and Story can be one and the same.**
 
 ## References
-1. [i3lance](http://www.i3lance.co.uk/2015/02/the-difference-between-storyboard-and-user-journey-and-user-story/)
-2. [ux.stackexchange](http://ux.stackexchange.com/questions/73083/storyboard-and-user-journey-whats-the-difference)
-3. [user-stories-the-beginners-guide](http://theuxreview.co.uk/user-stories-the-beginners-guide/)
-4. [user-journeys-beginners-guide](http://theuxreview.co.uk/user-journeys-beginners-guide/)
-
+1. [10 tips for writing good user stories](http://www.romanpichler.com/blog/10-tips-writing-good-user-stories/)
+2.  [User Stories – The Beginner's Guide](http://theuxreview.co.uk/user-stories-the-beginners-guide/)
+3. [User Journeys Beginner's Guide](http://theuxreview.co.uk/user-journeys-beginners-guide/)
+4. [UX The Difference between User Journey and User Story](http://www.i3lance.co.uk/2015/02/the-difference-between-storyboard-and-user-journey-and-user-story/)
 
 # What is 'the Job To be Done'?
