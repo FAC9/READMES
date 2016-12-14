@@ -1,7 +1,6 @@
 # usability and accessibility
 
-Intro
-
+At its most basic, usability is about making something straightforward for the average user to understand and access. Accessibility is about removing barriers for users who have additional barriers to use, such as a disability, a slow connection or an old computer.
 
 ## usability
 
