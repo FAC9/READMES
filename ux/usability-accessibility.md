@@ -1,7 +1,6 @@
 # Usability & Accessibility
 
-At its most basic, usability is about making something straightforward for the average user to understand and access. Accessibility is about supporting users who have additional barriers, such as a disability, a slow connection or an old computer.
-At its most basic, __usability__ is about making something straightforward for the average user to understand and access. __Accessibility__ is about removing barriers for users who have additional barriers, such as a disability, a slow connection or an old computer.
+At its most basic, __usability__ is about making something straightforward for the average user to understand and access. __Accessibility__ is about supporting users who have additional barriers, such as a disability, a slow connection or an old computer.
 
 ## Usability
 
