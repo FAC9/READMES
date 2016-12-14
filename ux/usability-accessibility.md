@@ -1,7 +1,5 @@
 # usability and accessibility
 
-Intro
-
 
 ## usability
 
