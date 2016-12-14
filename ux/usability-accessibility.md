@@ -4,6 +4,7 @@ At its most basic, __usability__ is about making something straightforward for t
 
 ## Usability
 
+
 ### What is usability?
 Web usability is the ease of use of a website:
  - The presentation of information and choices in a clear and concise way.
