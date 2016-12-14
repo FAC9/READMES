@@ -50,8 +50,27 @@ This might include:
 - Indicate language of the page in HTML page head (or around sections of text on your page that are in another language, or around abbreviations) for screen readers (```lang="en_gb"```)
 - Resizeable text
 - Labels on forms (useful guidelines [here](http://www.bbc.co.uk/guidelines/futuremedia/accessibility/html/form-labels.shtml  ))
+```
+<label for="name">Name:</label>
+<input id="name" type="text" name="textfield">
+```
 - Semantic HTML tags and IDs
 - Role attribute in HTML (gives information to screen readers, e.g. tablist)
+```
+<li class='navbar__liitem'>About</li>
+<li class='navbar__liitem' role="menu">Authors
+  <ul class='dropdown'>
+    <li class='subnavbar__liitem' role="menuitem">Cleo</li>
+    <li class='subnavbar__liitem' role="menuitem">Jen</li>
+    <li class='subnavbar__liitem' role="menuitem">John</li>
+    <li class='subnavbar__liitem' role="menuitem">Esraa</li>
+  </ul>
+</li>
+```
+
+```
+<form role=search>
+```
 - Transcripts for audio files
 - All functionality available via keyboard, e.g. tabbing or using arrow keys to navigate around (some users can't use a mouse - use tabindex!)
 - Consider users with dyslexia when deciding on line-height / text alignment / font
