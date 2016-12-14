@@ -31,9 +31,9 @@ as part of the Cabinet Office to undertake the digital transformation of governm
 
 In 2013 GOV.UK won the Design Museum's prestigious 'Designs of the Year' award for its user-centred design. GDS is quoted in the [Guardian](https://www.theguardian.com/artanddesign/2013/apr/16/government-website-design-of-year), saying: "We've removed everything that gets in the way of fast and easy access to information."
 
-To get an understanding of the process and principles behind GOV.UK take a look at the following resources:
+#### To get an understanding of the process and principles behind GOV.UK take a look at the following resources:
 1. [Recommendations from Martha Lane Fox](https://www.gov.uk/government/uploads/system/uploads/attachment_data/file/60993/Martha_20Lane_20Fox_s_20letter_20to_20Francis_20Maude_2014th_20Oct_202010.pdf)
-2. [Video of Tom Loosemore talking about how to build user-centred software products](https://vimeo.com/58798945) (strongly recommended viewing)
+2. [Video of Tom Loosemore talking about how to build user-centred software products](https://vimeo.com/58798945) (strongly recommended)
 3. [GOV.UK design principles](https://www.gov.uk/design-principles)
 
 ## accessibility
