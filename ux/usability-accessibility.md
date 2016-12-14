@@ -1,17 +1,17 @@
-# usability and accessibility
+# Usability & Accessibility
 
-At its most basic, usability is about making something straightforward for the average user to understand and access. Accessibility is about removing barriers for users who have additional barriers to use, such as a disability, a slow connection or an old computer.
+At its most basic, __usability__ is about making something straightforward for the average user to understand and access. __Accessibility__ is about removing barriers for users who have additional barriers, such as a disability, a slow connection or an old computer.
 
-## usability
+## Usability
 
-__What is usability?__
+### What is usability?
 Web usability is the ease of use of a website:
  - The presentation of information and choices in a clear and concise way.
  - Lack of ambiguity and the placement of important items in appropriate areas.
  - Ensuring that the content works on various devices and browsers.
  - Ensuring that the website is appropriate for all ages and genders.
 
-__Key principles to achieve usability:__
+### Key principles to achieve usability:
   1. Availability and Accessibility - if someone tries to access your site and it doesn't work for some reason, then your website becomes worthless.
   2. Clarity - users visit your site for a specific goal, do not confuse the user and help them reach their goal as quick as possible.
   3. Learnability - aim for an intuitive interface, an interface that doesn't require instructions. the key to intuitive design is to either use what people already know or create something that is easy to learn.
@@ -19,8 +19,21 @@ __Key principles to achieve usability:__
   make sure the site has an About us page including contact details.
   5. Relevancy - It is not enough that your website is clear, your content must also be relevant.
 
-List of resources
+### Examples
 
+One of the best known and frankly most surprising examples of user-centred design in the UK is the government's one-stop digital shop, [GOV.UK](https://www.gov.uk/).
+
+The overhaul of the government's web properties was based on [a series of recommendations](https://www.gov.uk/government/uploads/system/uploads/attachment_data/file/60993/Martha_20Lane_20Fox_s_20letter_20to_20Francis_20Maude_2014th_20Oct_202010.pdf) made by Martha Lane Fox in 2010. At the core of the recommendations she made was 'revolution not evolution' - she recomended that users must be the focus of the redesign of online government services.
+
+Government Digital Service (GDS) was founded in 2011
+as part of the Cabinet Office to undertake the digital transformation of government.
+
+In 2013 GOV.UK won the Design Museum's prestigious 'Designs of the Year' award for its user-centred design. GDS is quoted in the [Guardian](https://www.theguardian.com/artanddesign/2013/apr/16/government-website-design-of-year), saying: "We've removed everything that gets in the way of fast and easy access to information."
+
+To get an understanding of the process and principles behind GOV.UK take a look at the following resources:
+1. [Recommendations from Martha Lane Fox](https://www.gov.uk/government/uploads/system/uploads/attachment_data/file/60993/Martha_20Lane_20Fox_s_20letter_20to_20Francis_20Maude_2014th_20Oct_202010.pdf)
+2. [Video of Tom Loosemore talking about how to build user-centred software products](https://vimeo.com/58798945) (strongly recommended viewing)
+3. [GOV.UK design principles](https://www.gov.uk/design-principles)
 
 ## accessibility
 
