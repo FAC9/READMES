@@ -77,3 +77,7 @@ Local storage:
   - The client interprets the data and updates the page accordingly.
 
   This process is much more involved than using cookies, and is somewhat clumsy... There may be situations where this is better. For example in a one page app we may want to show something, anything, to the client AS SOON AS POSSIBLE. If we use this method we can immediately show them a blank page with no data, and then update it as soon as possible... :)
+
+# Useful links
+
+[How to create totally secure cookies](http://blog.teamtreehouse.com/how-to-create-totally-secure-cookies)
